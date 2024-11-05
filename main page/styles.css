@@ -8,19 +8,28 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 body {
-    background: url("UVCE.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    
+  background: url('UVCE.jpg') no-repeat center center fixed;
 
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: none;
+  z-index: 5;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 49, 49, 0.5); /* Black with 50% opacity */
+    z-index: -1;
+}}
 /* Club Logo at the left-top */
 .club-logo {
     position: fixed;
@@ -29,6 +38,7 @@ body {
     left: 20px;
     color: #fff;
     z-index: 100;
+
 }
 
 .club-logo h1 {
@@ -37,23 +47,25 @@ body {
     margin: 0;
 }
 
-.club-logo h3 {
+.club-logo p{
     font-size: 30px;
     font-weight: 200;
     position: fixed;
-    
     left: 20;
 }
-
 /* Wrapper for centering the tab-container */
 .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: rgba(0, 0, 0, 1); /* Optional background overlay */
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
 }
+
+   /* Wrapper for centering the tab-container */
+
+
 
 /* Center the tabs */
 .tab-container {
@@ -79,7 +91,7 @@ body {
 }
 
 .tab:hover {
-    background-color: #738293;
+    background-color: #6c8caf;
 }
 
 /* Tab content */
