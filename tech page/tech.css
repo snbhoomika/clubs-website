@@ -1,3 +1,4 @@
+
 /* CSS for adding the background image */
 re viewport is covered */
 html, body {
@@ -12,7 +13,7 @@ html, body {
   body {
     background-image: 
       linear-gradient(rgba(12, 12, 12, 0.8), transparent),
-      url('/images/a\ 1.png');
+      url('tech3bg.jpg');
     background-size: 50%; /* Ensures the image covers the entire screen */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents image tiling */
@@ -41,8 +42,7 @@ h1 {
     max-width: 1200px;
     padding: 0 10px;
 }
-.button {text-decoration: none;
-}
+
 /* Each club's individual card */
 .club {
     background-color: white;
@@ -60,7 +60,8 @@ h1 {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
+.button {text-decoration: none;
+}
 /* Logo image styling */
 .club img {
     width: 100px;

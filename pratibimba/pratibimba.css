@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #070707;
+    color: #f8f1f1;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: inherit;
+    height: 100vh;
+    background: url('image.2.jpeg') no-repeat center center/cover;
+    text-align: center;
+    text: weight 20px;
+    color: rgb(11, 11, 11);
+}
+.hero h1 {
+    font-size: 4rem;
+    animation: fadeIn 2s ease;
+}
+.subtitle {
+    font-size: 1.5rem;
+    animation: fadeIn 3s ease;
+}
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #232121;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+.cta:hover {
+    background-color: #756058;
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    text-align: center;
+    background-color: #0f0f0f;
+}
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Eligibility Section */
+.eligibility {
+    padding: 50px;
+    background-color: #523418;
+    background-image: url('background.jpeg');
+}
+.eligibility h2 { 
+    text-align: center;
+    margin-bottom: 30px;
+}
+.criteria-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(122, 13, 13);
+    background-image: url('image.2.jpeg');
+    shape-image-threshold: inherit;
+    display:fit;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(122, 91, 91, 0.966);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: solid;
+    text-emphasis-color: black;
+    color: #000;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+.gallery-item{text-align: right;
+colour:black;
+
+}
+.gallery-item {
+    width: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}/* Gallery Section */
+.gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section Animations */
+.about, .eligibility, .events {
+    animation: slideInUp 1s ease forwards;
+    opacity: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .criteria-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+.about, .eligibility, .events {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.about.visible, .eligibility.visible, .events.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.album {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  
+.image-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px; /* Same as main image width */
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+.main-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+.hover-images {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+  }
+  
+.hover-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+.image-container:hover .hover-images {
+    opacity: 1;
+  }
+  
+  .image-container:hover .main-image {
+    transform: scale(1.05);
+  }
+  /* Flexbox layout for social links */

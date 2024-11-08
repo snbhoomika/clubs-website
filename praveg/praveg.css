@@ -6,14 +6,13 @@
   }
   
   body {
-    background-image: url('gdsc.jpg');
+    background-image: url('/praveg/pravegbg2.jpeg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     color: #e0f7fa;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    
   }
   
   /* Background overlay for readability */
@@ -48,7 +47,7 @@
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
-    color: #b3e5fc;
+    color: #e2e7e9;
     text-align: justify;
     font-size: 1.1em;
     line-height: 1.8;
@@ -212,5 +211,3 @@
     }
   }
   
-  
-    

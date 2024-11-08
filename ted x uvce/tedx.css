@@ -1,0 +1,37 @@
+.speakername {
+    font-size: 30px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: red;
+}
+.descrpt {
+    font-size: 20px;
+    color: rgb(198, 198, 198);
+
+}
+body {
+    background: url('/ted x uvce/tedx\ images/bg2.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    
+    background-color: rgb(0, 0, 0);
+    
+}
+p.descrpt {
+    width: fit-content;
+    margin: 0%;
+}
+.Speakers {
+    word-spacing: 7px;
+    line-height: 23px;
+}
+.about {
+    vertical-align: middle;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.speakerdescrpt {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 20px;
+}

@@ -1,6 +1,5 @@
-/* Universal styles */
 body {
-    background-image: url('/images/background.jpg');
+    background-image: url("/tatva/tatvabg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -54,17 +53,22 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .navbar h1 {
     font-size: 2.5em;
     font-weight: bold;
     margin-right: 15px;
-}
+    display: flex;
+    
+    }
+
+    
 
 .navbar img {
     border-radius: 50%;
-    border: 3px solid #ffffff;
+    border: 1.5px solid #ffffff;
 }
 
 /* Section for "Events Conducted by Paradox" */
@@ -90,14 +94,14 @@ h1, h2, h3 {
 }
 
 .events_conducted .slider {
-    width: 45%;
+    width: 120%;
     overflow: hidden;
-    position: relative;
+    position:middle;
 }
 
 .slider .slide {
     display: none;
-    transition: opacity 1s ease;
+    transition: opacity 9s ease;
 }
 
 .slider img {
@@ -159,41 +163,4 @@ h1, h2, h3 {
     margin-right: 5px;
 }
 
- /* Footer Styling */
- footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(56, 52, 52, 0.8);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.8em;
-    z-index: 1;
-  }
-  
-  
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .navbar h1 {
-        font-size: 1.8em;
-    }
-
-    h1, h2, h3 {
-        font-size: 1.5em;
-    }
-
-    .events_conducted {
-        flex-direction: column; /* Stack content and slider vertically on smaller screens */
-    }
-
-    .events_conducted .content, .events_conducted .slider {
-        width: 100%;
-    }
-
-    .slider img {
-        height: 300px; /* Reduce image height on smaller screens */
-    }
-}
-
+ 

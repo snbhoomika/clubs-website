@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #cdcd43;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    
+  }
+
+  /* Navbar styling */
+  .navbar {
+    background-color: #969670;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar h1, .events_conducted .content h3 {
+    color: #be3535;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 5em;
+}
+
+.navbar img {
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-left: 10px;
+}
+
+/* Intro Section */
+.intro {
+  max-width: 1000px;
+  margin-bottom: 10px auto;
+  padding: 20px;
+  background: #FFFACD;
+  border-radius: 8px;
+  color:#b76a6a;
+  text-align: justify;
+  font-size: 0.8em;
+  line-height: 1.8;
+}
+
+/* Events Conducted Section */
+.events_conducted {
+  display: flex;
+  justify-content: center;
+  align-items: middle;
+  max-width: 2000px;
+  margin-bottom: 10px auto;
+  padding: 20px;
+  background-color: #ae4b4b;
+   border-radius: 8px;
+  color: #b3e5fc;
+}
+
+.events_conducted .content {
+  width: 50%;
+  padding-right: 20px;
+  text-align: justify;
+  font-size: 1.4em;
+  line-height: 1.8;
+}
+
+.events_conducted .content h3 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #FFFF00;
+  padding: 10px;
+}
+
+.events_conducted .slider {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.slider img {
+  width: 60%; /* Ensures images fill the width of their container */
+  height: auto; /* Maintains aspect ratio */
+  max-height: 450px; /* Keeps a consistent max height */
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-column .slide {
+  margin-bottom: 10px; /* Adds space between the two left images */
+}
+.left-column img, .right-column img {
+  width: auto;
+  max-width: 100%;
+  height: auto; /* keeps the aspect ratio */
+  max-height: 220px; /* adjust if needed */
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  object-fit: cover; /* Ensures the images fill the div without distorting */
+}
+
+  
+  .slider img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* About Us Section */
+  .about_us {
+    max-width: 900px;
+    margin-bottom: 10px auto;
+    padding: 15px;
+    background:  #FFFACD;
+    border-radius: 8px;
+    color: #af4b4b;;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.8;
+  }
+  
+  .about_us h2 {
+    font-size: 2em;
+    color: #903f3f;
+    margin-bottom: 15px;
+  }
+  
+  .about_us p {
+    margin-bottom: 10px;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s forwards;
+  }
+  
+  .fade-in:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .fade-in:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .fade-in:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+ /* Social Links */
+ .social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #984a4a;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+  
+  /* Keyframe Animation */
+  @keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .slider {
+      flex-direction: column;
+      align-items: center;
+  }
+  .left-column, .right-column {
+      width: 100%;
+  }
+}
+
+
+  .events_conducted {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .events_conducted .content, .events_conducted .slider {
+      width: 100%;
+  }
+
+  .intro, .criteria, .about_us {
+      padding: 15px;
+   }
+
+
+
+  
+
+  
