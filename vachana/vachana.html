@@ -111,7 +111,25 @@
         <a href="https://www.instagram.com/uvce.vachana/" id="instalink">Instagram
         </a>
     </div>
+     <!-- Hamburger Menu -->
+     <div class="menu">
+        <div class="hamburger-icon">☰</div>
+        <div class="menu-items">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#upcoming events">Upcoming events</a>
+            <a href="#activities">Activities</a>
+            <a href="#contacts">Contacts</a>
 
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for toggling the menu
+        document.querySelector('.hamburger-icon').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>
 
 </body>
 

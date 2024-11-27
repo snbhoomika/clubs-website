@@ -115,6 +115,26 @@
         </div>
     </div>
 
+
+     <!-- Hamburger Menu -->
+     <div class="menu">
+        <div class="hamburger-icon">☰</div>
+        <div class="menu-items">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#upcoming events">Upcoming events</a>
+            <a href="#activities">Activities</a>
+            <a href="#contacts">Contacts</a>
+
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for toggling the menu
+        document.querySelector('.hamburger-icon').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>
         <div class="Aboutus" style="margin-bottom: 100px;">
             <p style="font-weight: bolder; display: flex; align-items: center; justify-content: center;color: red; font-size: 25px;">About Us</p>
             <br>

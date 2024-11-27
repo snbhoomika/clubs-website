@@ -1,6 +1,6 @@
 
   /* Universal styles */
-* {
+/** {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,30 +17,66 @@ body {
   line-height: 1.6;
 }
 
+
+
+
 /* Background overlay for readability */
 /* General reset */
 
 
 /* Header styling */
-head {
+/*head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #333;
   color: white;
-  padding: 10px 20px;
+  padding: 10px;
   position: relative;
 }
 
-/* Title styling */
+/* General styles for the menu container */
+/*.menu {
+  position: relative;
+  text-align: right; /* Aligns hamburger icon to the right */
+/*}
 
-/* Hamburger icon styling */
-.hamburger {
+/* Hamburger icon styles */
+/*.hamburger-icon {
+  font-size: 24px;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  display: inline-block;
+  margin-right: 20px; /* Add space between icon and edge */
+/*}
 
+/* Initially hide menu items */
+/*.menu-items {
+  display: none;
+  flex-direction: column; /* Stack menu items vertically */
+  /*position: absolute; /* Position the menu absolutely relative to the container */
+  /*top: 40px; /* Adjust based on the height of the icon */
+  /*right: 20px; /* Align menu items with the hamburger icon */
+ /* background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Show menu items when menu is active */
+/*.menu.active .menu-items {
+  display: flex;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 0;
+  display: block;
+  text-align: right; /* Align text to the right */
+/*}
+
+
+/* T
 }
 
 .hamburger div {
@@ -49,7 +85,7 @@ head {
   background: white;
 }
 
-/* Menu styling */
+/* Menu styling 
 .menu {
   position: right;
   top: 60px;
@@ -74,13 +110,13 @@ head {
 }
 
 /* Hide menu by default */
-.hidden {
+/*.hidden {
   display: none;
 }
 
 
 /* Navbar styling */
-.navbar {
+/*.navbar {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 15px;
   display: flex;
@@ -102,7 +138,7 @@ head {
 }
 
 /* Intro Section */
-.intro {
+/*.intro {
   max-width: 900px;
   margin: 20px auto;
   padding: 20px;
@@ -115,7 +151,7 @@ head {
 }
 
 /* Criteria to Join Section */
-.criteria {
+/*.criteria {
   max-width: 900px;
   margin: 20px auto;
   padding: 20px;
@@ -135,7 +171,7 @@ head {
 }
 
 /* Events Conducted Section */
-.events_conducted {
+/*.events_conducted {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -182,7 +218,7 @@ head {
 }
 
 /* About Us Section */
-.about_us {
+/*.about_us {
   max-width: 900px;
   margin: 20px auto;
   padding: 20px;
@@ -223,7 +259,7 @@ head {
 }
 
 /* Social Links */
-.social-links {
+/*.social-links {
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -245,7 +281,7 @@ head {
 }
 
 /* Keyframe Animation */
-@keyframes fadeIn {
+/*@keyframes fadeIn {
   to {
       opacity: 1;
       transform: translateY(0);
@@ -253,7 +289,7 @@ head {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .navbar h1 {
       font-size: 2em;
   }
@@ -271,3 +307,173 @@ head {
       padding: 15px;
   }
 }
+
+
+
+
+
+
+
+
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+  background-image: url('originalG2C2bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #e0f7fa;
+  line-height: 1.6;
+}
+
+/* Hamburger Menu Styles */
+.menu {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 1000;
+  text-align: right;
+}
+
+.hamburger-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: #7c7979;
+}
+
+.menu-items {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: rgba(240, 233, 233, 0.9);
+  border: 1px solid #6f6c6c;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.menu.active .menu-items {
+  display: flex;
+}
+
+.menu-items a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+
+.menu-items a:hover {
+  background-color: #818282;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-right: 15px;
+  color: #f9fbfc;
+}
+
+.navbar img {
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-left: 10px;
+}
+
+/* Intro Section */
+.intro, .criteria, .about_us {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  text-align: justify;
+}
+
+.intro p, .criteria p, .about_us p {
+  color: #f9fbfc;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/* Events Conducted Section */
+.events_conducted {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  color: #f9fbfc;
+}
+
+.events_conducted .content {
+  width: 50%;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.events_conducted .slider {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.slider img {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.slider img:hover {
+  transform: scale(1.05);
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #f9fbfc;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
