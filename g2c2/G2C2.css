@@ -18,6 +18,65 @@ body {
 }
 
 /* Background overlay for readability */
+/* General reset */
+
+
+/* Header styling */
+head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* Title styling */
+
+/* Hamburger icon styling */
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background: white;
+}
+
+/* Menu styling */
+.menu {
+  position: right;
+  top: 60px;
+  right: 20px;
+  background: #333;
+  padding: 10px;
+  display: right;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.menu a:hover {
+  background-color: #575757;
+  border-radius: 3px;
+}
+
+/* Hide menu by default */
+.hidden {
+  display: none;
+}
 
 
 /* Navbar styling */
