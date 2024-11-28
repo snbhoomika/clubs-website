@@ -164,7 +164,7 @@ h1, h2, h3 {
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeIn 50s forwards;
+    animation: fadeIn 5s forwards;
 }
 
 .fade-in:nth-child(1) {
