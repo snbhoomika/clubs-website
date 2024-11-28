@@ -1,0 +1,92 @@
+.heading{
+    text-align: center;
+    justify-content: center;
+    margin: 25px;
+    line-height: 15px;
+}
+
+body{
+    background-image: url(web.avif);
+    background-position: 100%;
+    
+}
+
+/* Hamburger Menu Styles */
+.menu {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
+    text-align: right;
+  }
+  
+  .hamburger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #7c7979;
+  }
+  
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: rgba(240, 233, 233, 0.9);
+    border: 1px solid #6f6c6c;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  .menu.active .menu-items {
+    display: flex;
+  }
+  
+  .menu-items a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-weight: bold;
+  }
+  
+  .menu-items a:hover {
+    background-color: #818282;
+    color: #ffffff;
+    border-radius: 3px;
+  }
+    
+.description{
+    background-color:rgb(107, 106, 106);
+    padding: 20px;
+    color: rgb(10, 10, 10);  /* Text color to make it visible against the background */
+}
+
+hr {
+    margin: 20px 0;  /* Optional: space around the <hr> */
+    border: none;    /* Optional: remove default border */
+    border-top: 2px solid #fff; /* Optional: style the <hr> line */
+}
+
+
+.ieee-logo{
+ height: 100px;
+ width: 100px;
+ }
+
+.programg-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 50px;
+
+}
+.grid-items{
+    background-color: rgb(140, 138, 137);
+
+}
+footer{
+    text-align: center;
+    background-color: black;
+}
+
+
