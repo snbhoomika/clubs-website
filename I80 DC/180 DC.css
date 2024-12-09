@@ -1,0 +1,62 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+/* Title Section Styling */
+.title-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #008000;
+    padding: 20px;
+    color: white;
+}
+
+/* Title Text Styling */
+.title-section h1 {
+    font-size: 36px; /* Title size adjusted */
+    margin: 0;
+    text-align: center;
+    flex: 1; /* Allows the text to center itself */
+}
+
+/* Club Logo Styling */
+.club-logo {
+    width: 100px; /* Adjust logo size */
+    height: auto;
+    margin-left: 20px; /* Adds space between the title and the logo */
+}
+
+/* Content Section Styling */
+.content {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6; /* Increased font size for content */
+}
+.content li {
+    font-size: 100px;
+}
+
+
+/* Bullet List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul ul {
+    list-style-type: circle; /* Sub-bullet style */
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 40px;
+}
+
+
+
