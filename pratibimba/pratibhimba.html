@@ -11,37 +11,38 @@
 <body>
     <header>
         <div class="logo-container">
-          <img src="pratibimba.png" alt="Your Club Logo">
-          <h1>Pratibimba</h1>
+            <img src="pratibimba.png" alt="Your Club Logo">
+            <h1>Pratibimba</h1>
         </div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-        </nav>
-      </header>
-    <!-- Hero Section -->
+        <div class="menu">
+            <div class="hamburger-icon">☰</div>
+            <div class="menu-items">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#upcoming events">Upcoming events</a>
+                <a href="#activities">Activities</a>
+                <a href="#contacts">Contacts</a>
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        // JavaScript for toggling the menu
+        document.querySelector('.hamburger-icon').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>
+    
     <section class="hero">
         <div class="hero-content">
-            <h1 class="subtitle"> We Create, We Capture</h1>
-            <a href="#about" class="cta">Explore</a>
+            <h1 class="subtitle">We Create, We Capture</h1>
         </div>
     </section>
+    
     <!-- About Section -->
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>Founded in 2022, Prathibimba is more than just a club; it’s a vibrant community for photographers, artists, and creatives driven by the passion to explore, express, and inspire. Here, creativity knows no boundaries. Through Prathibimba, we create a unique space where the art of storytelling meets the skill of capturing life's moments, and where each member’s vision is celebrated.
-
-Our mission is to nurture talent, inspire fresh perspectives, and provide a platform for artists and photographers to shine. Prathibimba brings people together through diverse events, workshops, exhibitions, and collaborative projects that encourage exploration of new ideas, techniques, and forms of expression. We aim to build a supportive community where ideas flow freely, skills grow, and every member finds a place to belong and thrive.
-
-From capturing raw beauty in photographs to creating visually moving art, Prathibimba offers a platform for members to experiment, learn, and inspire. Join us as we blur the lines between reality and imagination, capturing moments and creating memories that reflect our collective passion for the arts.</p>
+        <p>Founded in 2022, Prathibimba is more than just a club; it’s a vibrant community for photographers, artists, and creatives driven by the passion to explore, express, and inspire. Here, creativity knows no boundaries. Through Prathibimba, we create a unique space where the art of storytelling meets the skill of capturing life's moments, and where each member’s vision is celebrated.</p>
     </section>
 
     <!-- Eligibility Section -->
@@ -70,6 +71,7 @@ From capturing raw beauty in photographs to creating visually moving art, Prathi
             </div>
         </div>
     </section>
+
     <!-- Events & Gallery Section -->
     <section id="events" class="events">
         <h2>Events & Gallery</h2>
@@ -81,15 +83,19 @@ From capturing raw beauty in photographs to creating visually moving art, Prathi
             <div class="gallery-item"><img src="2.jpeg" alt="Artwork 1"></div>
             <div class="gallery-item"><img src="1.jpeg" alt="Artwork 1"></div>
             <div class="gallery-item"><img src="5.jpeg" alt="Artwork 1"></div>
+        </div>
+    </section>
     
-   
-        </section>
-        
-    </main>
-    <div class="social-links">
-        <a href="https://www.instagram.com/uvce_prathibimba?igsh=MmJudnMxMWN1bzJy" target="_blank" class="social-link">
-            <img src="/images/instagram_logo.jpg" alt="Instagram" class="social-icon"> Instagram
-        </a>
+    <!-- Contacts Section -->
+    <section id="contacts" class="contacts">
+        <div class="contacts">
+            <a href="https://www.instagram.com/uvce_prathibimba?igsh=MmJudnMxMWN1bzJy" target="_blank" class="contacts">
+                <img src="/images/instagram_logo.jpg" alt="Instagram" class="social-icon"> Instagram
+            </a>
+            <a href="#contacts" class="cta">Explore</a>
+        </div>
+    </section>
+    
     <script src="pratibimba.js"></script>
 </body>
 </html>
