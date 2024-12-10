@@ -9,7 +9,7 @@ function showSlide(index) {
 
     // Show the current slide
     slides[index].style.display = 'block';
-    slides[index].style.opacity = '1';
+    slides[index].style.opacity = '0.1';
 }
 
 // Function to change slides every second
