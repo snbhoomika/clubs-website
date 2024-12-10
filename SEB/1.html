@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>
+<!---<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,6 +37,13 @@
         .block-content {
             padding: 20px;
         }
+        .block img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+        .block:hover img {
+            transform: scale(1.1);
+        }
         .contact {
             text-align: center;
             padding: 20px;
@@ -51,27 +58,12 @@
                 flex-direction: row;
                 align-items: flex-start;
             }
-        }
-        .slideshow {
-            width: 100%;
-            height: 300px;
-            overflow: hidden;
-            position: relative;
-            border: none;
-            border-radius: 0;
-            box-shadow: none;
-        }
-        .slides img {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            transition: opacity 2s ease-in-out;
-        }
-        .slides img.active {
-            opacity: 1;
+            .block img {
+                width: 50%;
+            }
+            .block-content {
+                width: 50%;
+            }
         }
     </style>
 </head>
@@ -95,16 +87,7 @@
             <h2>Information Block 2</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ultrices eros. Aenean venenatis nibh et massa tincidunt.</p>
         </div>
-        <div class="slideshow">
-            <div class="slides">
-                <img src="photo1.jpg" alt="Photo 1" class="active">
-                <img src="photo2.jpg" alt="Photo 2">
-                <img src="photo3.jpg" alt="Photo 3">
-                <img src="photo4.jpg" alt="Photo 4">
-                <img src="photo5.jpg" alt="Photo 5">
-                <img src="photo6.jpg" alt="Photo 6">
-            </div>
-        </div>
+        <img src="photo2.jpg" alt="Transformation Photo 2">
     </div>
     <div class="block">
         <div class="block-content">
@@ -120,28 +103,6 @@
     <p>Follow us on Instagram: <a href="https://www.instagram.com/yourclubprofile">@yourclubprofile</a></p>
     <p>Email: <a href="mailto:info@yourclub.com">info@yourclub.com</a></p>
 </div>
-
-<script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slides img');
-    const totalSlides = slides.length;
-
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.classList.toggle('active', i === index);
-        });
-    }
-
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        showSlide(currentSlide);
-    }
-
-    setInterval(nextSlide, 8000); // Change every 8 seconds
-
-    // Initial display
-    showSlide(currentSlide);
-</script>
 
 </body>
 </html>
