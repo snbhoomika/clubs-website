@@ -84,5 +84,25 @@ nav {
 .card:hover {
     transform: translateY(-10px);
 }
-  
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #e0f7fa;
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+
   /* ... other CSS styles for sections, hero, buttons, etc. */

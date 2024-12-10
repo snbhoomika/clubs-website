@@ -10,48 +10,56 @@ body {
     overflow-x: hidden;
 }
 /* Hamburger Menu Styles */
-.menu {
-    position: fixed;
-    top: 10px;
-    right: 20px;
-    z-index: 1000;
-    text-align: right;
-  }
-  
-  .hamburger-icon {
-    font-size: 30px;
-    cursor: pointer;
-    color: #7c7979;
-  }
-  
-  .menu-items {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    background-color: rgba(240, 233, 233, 0.9);
-    border: 1px solid #6f6c6c;
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 1000;
-  }
-  
-  .menu.active .menu-items {
+header {
+    background-color: #fdf3f3;
+    color: #161515;
+    padding: 25px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  .menu-items a {
-    color: #333;
-    text-decoration: none;
-    padding: 8px 15px;
-    font-weight: bold;
+  .logo-container {
+    display: flex;
+    align-items: center;
   }
   
-  .menu-items a:hover {
-    background-color: #818282;
-    color: #ffffff;
-    border-radius: 3px;
+  .logo-container img {
+    width: 70px;
+    margin-right: 30px;
+  }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f0f0f0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    color: #c90808;
+
+
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+
+  }
+  
+  .burger {
+    display: none;
+    flex-direction:row;
+    font-weight: 100;
+  }
+  
+  .burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
   }
 
 /* Hero Section */
@@ -254,4 +262,25 @@ colour:black;
   .image-container:hover .main-image {
     transform: scale(1.05);
   }
+  .social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #e0f7fa;
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+ 
   /* Flexbox layout for social links */

@@ -11,29 +11,28 @@
 <body>
 
      <!-- Hamburger Menu -->
-     <div class="menu">
-        <div class="hamburger-icon">☰</div>
-        <div class="menu-items">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#upcoming events">Upcoming events</a>
-            <a href="#activities">Activities</a>
-            <a href="#contacts">Contacts</a>
-
+     <header>
+        <div class="logo-container">
+          <img src="pratibimba.png" alt="Your Club Logo">
+          <h1>Pratibimba</h1>
         </div>
-    </div>
-
-    <script>
-        // JavaScript for toggling the menu
-        document.querySelector('.hamburger-icon').addEventListener('click', function () {
-            document.querySelector('.menu').classList.toggle('active');
-        });
-    </script>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#events">Upcoming Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </header>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Prathibimba</h1>
-            <p class="subtitle"> We Create, We Capture</p>
+            <h1 class="subtitle"> We Create, We Capture</h1>
             <a href="#about" class="cta">Explore</a>
         </div>
     </section>
@@ -89,12 +88,12 @@ From capturing raw beauty in photographs to creating visually moving art, Prathi
         </section>
         
     </main>
-    <p>
-        **Social Media:**<br>
-        <a href="https://www.facebook.com/yourclub"><img src="facebook-logo.png" alt="Facebook"></a><br>
-        <a href="https://www.instagram.com/yourclub"><img src="instagram-logo.png" alt="Instagram"></a><br>
-        <a href="https://twitter.com/yourclub"><img src="twitter-logo.png" alt="Twitter"></a>
-      </p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/uvce_tatva/?igsh=MXNxMDhjMWdnNmZ3eA%3D%3D#" target="_blank" class="social-link">
+            <img src="/images/instagram_logo.jpg" alt="Instagram" class="social-icon"> Instagram
+        </a>
+       
+    </div>
 
     
 
