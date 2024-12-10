@@ -1,0 +1,75 @@
+<!---<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Slow Photo Slideshow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .slideshow {
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .slides img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+        .slides img.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slideshow">
+    <div class="slides">
+        <img src="/SEB/seb images/uvcefoundation1.jpg" alt="Photo 1" class="fade">
+        <img src="/SEB/seb images/uvcefoundation2.jpg" alt="Photo 2" class="slide">
+        <img src="/SEB/seb images/uvcefoundation3.jpg" alt="Photo 3" class="zoom">
+        <img src="/SEB/seb images/uvcefoundation4.jpg" alt="Photo 4" class="rotate">
+        <img src="/SEB/seb images/uvcefoundation5.jpg" alt="Photo 5" class="flip">
+    </div>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slides img');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 8000); // Change every 8 seconds
+
+    // Initial display
+    showSlide(currentSlide);
+</script>
+
+</body>
+</html>
