@@ -115,6 +115,13 @@ h1, h2, h3 {
     border: 1.5px solid #ffffff;
 }
 
+/* #events{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+
+} */
 /* Section for "Events Conducted by Paradox" */
 .events_conducted {
     display: flex;
@@ -124,7 +131,7 @@ h1, h2, h3 {
     margin-bottom: 20px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 8px;
-    margin-left: 40px; /* Move section slightly right */
+    /* Move section slightly right */
 }
 
 .events_conducted .content {
@@ -186,14 +193,29 @@ h1, h2, h3 {
     }
 }
 /* Responsive adjustments for mobile */
-@media (max-width: 768px) {
+@media (max-width: 428px) {
     .slider {
         height: auto; /* Adjust height for mobile */
     }
-
+    
     .slide img {
         width: 100vw;
-        height: auto;}}
+        height: auto;}
+    
+}
+
+@media (min-width: 948px){
+    .events_conducted {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 8px;
+        margin-left: 40px;
+    }
+}
 /* Flexbox layout for social links */
 .social-links {
     margin-top: 20px;
