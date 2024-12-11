@@ -7,11 +7,11 @@
   }
   
   body {
-    background-image: url('E\ cell\ bg.jpeg');
+    background-image: url('/Chronicles/microphone-grey.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    color: #e0f7fa;
+    color: #f6f8f8;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
   }
@@ -80,7 +80,7 @@
   position: absolute;
   top: 40px;
   right: 0;
-  background-color: rgba(240, 233, 233, 0.9);
+  background-color: rgba(254, 254, 254, 0.9);
   border: 1px solid #6f6c6c;
   padding: 10px;
   border-radius: 5px;
@@ -120,7 +120,7 @@
     font-size: 2.5em;
     font-weight: bold;
     margin-right: 15px;
-    color: #e0f7fa;
+    color: #fafafa;
   }
   
   .navbar img {
@@ -136,7 +136,7 @@
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
-    color: #b3e5fc;
+    color: #f7f9f9;
     text-align: justify;
     font-size: 1.1em;
     line-height: 1.8;
@@ -149,7 +149,7 @@
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
-    color: #b3e5fc;
+    color: #f6f7f7;
     font-size: 1.1em;
     line-height: 1.8;
     text-align: justify;
@@ -158,6 +158,12 @@
   .criteria h2 {
     text-align: center;
     font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  .criteria h3{
+    text-align: center;
+    font-size: 1.4em;
     color: #ffffff;
     margin-bottom: 15px;
   }
@@ -172,7 +178,7 @@
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
-    color: #b3e5fc;
+    color: #fdfefe;
   }
   
   .events_conducted .content {
@@ -216,7 +222,7 @@
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
-    color: #b3e5fc;
+    color: #fbfcfc;
     text-align: center;
     font-size: 1.1em;
     line-height: 1.8;
@@ -260,7 +266,7 @@
   .social-link {
     margin: 0 10px;
     text-decoration: none;
-    color: #e0f7fa;
+    color: #f8fafa;
     display: flex;
     align-items: center;
     font-weight: bold;
