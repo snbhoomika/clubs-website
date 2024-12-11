@@ -9,16 +9,23 @@ body {
     background-color: #131212;
     color: #fffdfd;
     overflow-x: hidden;
+    padding-top: 80px; /* Offset for fixed navbar */
 }
 
 /* Header Styles */
 header {
-    background-color: #141414;
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333333;
     color: #f8f3f3;
-    padding: 30px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000; /* Keep it on top of other content */
+    box-shadow: 0 4px 8px rgba(121, 119, 119, 0.5); /* Add shadow for visibility */
 }
 
 .logo-container {
@@ -41,26 +48,22 @@ header {
     display: flex;
     justify-content: space-around;
     gap: 20px;
+
 }
 
-.navbar button {
+.navbar a {
     background-color: #0b1a44;
     color: #fff;
     padding: 10px 20px;
-    border: none;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
-    display: flex;
-}
-
-.navbar button a {
-    color: inherit;
+    display: inline-block;
     text-decoration: none;
-    display: flex;
+    text-align: center;
 }
 
-.navbar button:hover {
+.navbar a:hover {
     background-color: #757558;
 }
 
@@ -89,6 +92,7 @@ header {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
+    opacity: 20%;
     background-color: #232121;
     color: white;
     border-radius: 5px;
@@ -173,6 +177,7 @@ header {
     transform: scale(1.1);
 }
 
+
 /* Animations */
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -195,7 +200,6 @@ header {
     animation: slideInUp 1s ease forwards;
     opacity: 0;
 }
-
 /* Contacts Section */
 .contacts {
     margin-top: 20px;
@@ -213,5 +217,3 @@ header {
     height: 24px;
     margin-right: 5px;
 }
-
-
