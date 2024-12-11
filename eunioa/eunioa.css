@@ -79,7 +79,7 @@ h1, h2, h3 {
     text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.6);
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     display: flex;
 }
 
@@ -96,7 +96,7 @@ h1, h2, h3 {
     margin: 10px 0;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     color: #b3e5fc;
-    font-size: 5m;
+    font-size: 2m;
     line-height: 1.8;
 }
 
