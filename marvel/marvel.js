@@ -20,6 +20,9 @@ function changeSlide() {
 
 // Show the first slide
 showSlide(currentIndex);
-
-// Change slides every second
-setInterval(changeSlide, 1000); // Change slide every 1 second
+<script>
+        // JavaScript for toggling the menu
+        document.querySelector('.hamburger-icon').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>

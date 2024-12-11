@@ -10,6 +10,20 @@ body {
     padding: 0;
     margin: 0;
 }
+ /* Hamburger Menu Styles */
+ .menu {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
+    text-align: right;
+  }
+  
+  .hamburger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #7c7979;
+  }
 
 body::before {
     content: "";
@@ -169,6 +183,56 @@ h1, h2, h3 {
     width: 24px;
     height: 24px;
     margin-right: 5px;
+}
+/* Hamburger Menu Styles */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.hamburger-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    color: white;
+    background: #1a1a2e; /* Matches the navbar color */
+    border: none;
+}
+
+.menu-items {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hide the menu items off-screen */
+    width: 200px;
+    height: 100%;
+    background: #1a1a2e; /* Matches navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: left 0.3s ease; /* Smooth sliding animation */
+    padding: 2rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+}
+
+.menu-items a:hover {
+    background: #2a2a3e;
+    border-radius: 5px;
+}
+
+.menu.active .menu-items {
+    left: 0; /* Slide menu into view */
 }
 
  
