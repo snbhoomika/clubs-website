@@ -19,7 +19,7 @@ body {
 
 /* Title Text Styling */
 .title-section h1 {
-    font-size: 36px; /* Title size adjusted */
+    font-size: 20px; /* Title size adjusted */
     margin: 0;
     text-align: center;
     flex: 1; /* Allows the text to center itself */
@@ -57,6 +57,3 @@ ul ul {
 li {
     margin-bottom: 40px;
 }
-
-
-

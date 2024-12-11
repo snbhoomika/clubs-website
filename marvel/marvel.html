@@ -3,69 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the Paradox Music Club at UVCE, dedicated to music and creativity. Join us for events, auditions, and more.">
-    <title>MARVEL</title>
-    <link rel="stylesheet" href="marvel.css">
+    <meta name="description" content="Explore the Marvel Technical Club at UVCE, dedicated to innovation and creativity. Join us for events, projects, and more.">
+    <title>Marvel Technical Club - UVCE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        
+        
+        /* Basic reset */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #f0f2f5; /* Light text color for better readability */
+            background: #121212; /* Dark background */
+        }
 
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #1a1a2e, #16213e);
+            color: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .navbar img {
+            border-radius: 50%;
+            border: 2px solid #fff;
+            width: 60px;
+            height: 60px;
+        }
+
+        /* Intro Section */
+        .intro {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 3rem 2rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+        }
+
+        /* Styling for Lists */
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        li:hover {
+            color: #f39c12;
+        }
+
+        /* R&D Lab Styling */
+        .rnd_lab {
+            background: linear-gradient(145deg, #0e153a, #1f4068);
+            padding: 3rem;
+            border-radius: 15px;
+            margin-top: 3rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .rnd_lab h2, .rnd_lab h3, .rnd_lab ul li {
+            color: #e1d8d8;
+        }
+
+        /* About Us Section */
+        .about_us {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(to right, #141e30, #243b55);
+            border-radius: 10px;
+        }
+
+        .about_us h2 {
+            color: #f0f2f5;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(to right, #333, #555);
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .social-links a:hover {
+            background: linear-gradient(to right, #555, #777);
+            transform: translateY(-5px);
+        }
+
+        /* General Styling for Headings and Text */
+        h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #f0f2f5; /* Light text for contrast */
+            line-height: 1.8;
+        }
+
+        /* Add subtle animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Remove any blur effects */
+        section, .navbar, .rnd_lab {
+            filter: none;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <h1>MARVEL</h1>
-        
-        <img src="/tech page/marvellogo.png" alt="Marvel Logo" width="80px" height="80px">
-    </nav>
-    
-    <main>
-        <section class="intro">  <p>Eunioa was founded in November(2023), is a creative platform that transforms fashion into a powerful language of storytelling. We 
-            believe that every garment, every accessory and every style tells a story- of a person, a place or an idea.</p>
-            
-        
-        <section class="criteria">
-            <h2>About Marvel</h2>
-            <ol>
+     <!-- Hamburger Menu -->
+     <div class="menu">
+        <div class="hamburger-icon">☰</div>
+        <div class="menu-items">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#upcoming events">Upcoming events</a>
+            <a href="#activities">Activities</a>
+            <a href="#contacts">Contacts</a>
 
-                
-                <li><strong>Creative Storytelling:</strong> Eunoia weaves narratives into our designs, using fashion to express diverse cultural stories.</li>
-                <li><strong>Planning and Coordination:</strong>Organizing a fashion show requires careful planning, from choosing the narrative, choreography to styling the models.</li>
-                <li><strong>Engage the Audience:</strong> These events let people experience fashion up close, making it more exciting and memorable.</li> 
-            <p>Stay updated on recruitment dates and requirements by following the fashion club EUNIOA on social media channels.</p>
+        </div>
+    </div>
+    <nav class="navbar">
+        <h1>Marvel</h1>
+        <img src="/tech page/marvellogo.png" alt="Marvel Logo">
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome to Marvel Technical Club</h2>
+            <p>We are committed to fostering innovation, creativity, and collaboration at UVCE. Explore our activities, projects, and events!</p>
         </section>
+
+        <section class="overview">
+            <h2>Overview of Marvel Club</h2>
+            <p>Marvel Technical Club is a vibrant student-driven organization at the University Visvesvaraya College of Engineering (UVCE), Bengaluru. With an unwavering commitment to innovation and learning, the club has become a hub for aspiring engineers and technologists to thrive. Here's what makes Marvel unique:</p>
         
-        <section class="events_conducted">
-            <div class="content">
-                <h3>Events Conducted by Marvel</h3>
-                <li><strong>Humanza Victory,2024:</strong> Participated and secured 1st place at the cultural fashion show at St.Paul's College event. </li>
-                <li><strong> Fiesta Showcase, 2024: </strong>Demonstrated how today's corporate professionals can bring their full selves to work, expressing their unique style within the coorporate framework.</li>  
-                <li><strong>Vaibhava, 2023:</strong> Celebrated Karnataka's cultural heritage. </li>
-                <li><strong>Majama.2024:</strong>Presented a capativating Nava Durga performance, celebrating the richness of cultural traditions through fashion. </li>
-            <div class="slider">
-                <div class="slides">
-                <div class="slide"><img src="/eunioa/euonia1.png" alt="Event Image 1"></div>
-                <div class="slide"><img src="/eunioa/eunioa2.png" alt="Event Image 2"></div>
-                <div class="slide"><img src="/eunioa/eunioa3.png" alt="Event Image 3"></div>
-                <div class="slide"><img src="/eunioa/eunioa4.png" alt="event Image 4"></div>
-            </div></div>
-        </section>
+            <h3>Core Objectives</h3>
+            <ul>
+                <li><strong>Skill Development:</strong> Cultivating proficiency in areas such as programming, robotics, electronics, and innovative engineering design through hands-on workshops and activities.</li>
+                <li><strong>Knowledge Exchange:</strong> Hosting knowledge-sharing sessions, guest lectures, and seminars to keep members updated on emerging trends and technologies.</li>
+                <li><strong>Innovation Platform:</strong> Encouraging students to think outside the box and develop creative solutions for real-world problems.</li>
+                <li><strong>Community Building:</strong> Promoting teamwork, networking, and collaboration among students from diverse engineering disciplines.</li>
+            </ul>
         
+            <h3>Key Activities and Events</h3>
+            <ul>
+                <li><strong>Hackathons:</strong> Organizing in-house and inter-college hackathons to solve industry-relevant challenges.</li>
+                <li><strong>Workshops:</strong> Covering topics like AI/ML, IoT, robotics, blockchain, and app development.</li>
+                <li><strong>Competitions:</strong> Hosting technical quizzes, coding challenges, and engineering design contests to foster a competitive spirit.</li>
+                <li><strong>Outreach Programs:</strong> Collaborating with schools and communities to promote STEM education and inspire the next generation.</li>
+            </ul>
         
-        <section class="about_us">
-            <h2>About Us</h2>
-            <p class="fade-in">Technical club UVCE.</p>
-            <p class="fade-in">The Official page of Marvel!!</p>
-            <p class="fade-in">To bring everyone together through the wonderful and beautiful gift of fashion!</p>
+            <h3>Community and Mentorship</h3>
+            <p>The club thrives on a culture of mentorship and mutual growth. Senior members guide juniors on various technical and professional fronts, ensuring a supportive learning environment.</p>
         
+            <h3>Impact and Achievements</h3>
+            <ul>
+                <li>Represented UVCE at multiple national and international technical competitions, winning accolades and recognition.</li>
+                <li>Developed impactful projects, such as smart healthcare solutions, eco-friendly automation systems, and AI-based tools.</li>
+                <li>Fostered collaborations with startups and industries, bridging the gap between academics and the professional world.</li>
+            </ul>
+        
+
+            <section class="rnd_lab">
+                <h2>Marvel Club R&D Lab</h2>
+                <p>The Research and Development (R&D) Lab of Marvel Technical Club serves as a center for experimentation, learning, and innovation. Designed to empower students, the lab provides resources and mentorship to transform ideas into tangible outcomes. Here's an in-depth look at its initiatives:</p>
+            
+                <h3>Core Goals</h3>
+                <ul>
+                    <li><strong>Technological Innovation:</strong> Enable students to explore emerging technologies and apply them to solve practical problems.</li>
+                    <li><strong>Research Culture:</strong> Foster an environment where students engage in research-oriented projects, preparing them for academia and industry.</li>
+                    <li><strong>Interdisciplinary Collaboration:</strong> Encourage projects that integrate concepts from multiple engineering fields, promoting diverse perspectives.</li>
+                </ul>
+            
+                <h3>Focus Areas</h3>
+                <ul>
+                    <li><strong>Robotics:</strong> Building autonomous systems and intelligent robots capable of performing complex tasks.</li>
+                    <li><strong>Artificial Intelligence & Machine Learning:</strong> Developing predictive models, AI-powered tools, and intelligent systems.</li>
+                    <li><strong>Internet of Things (IoT):</strong> Creating smart devices and interconnected systems for real-time monitoring and automation.</li>
+                    <li><strong>Embedded Systems:</strong> Prototyping hardware solutions using microcontrollers and sensors for various applications.</li>
+                </ul>
+            
+                <h3>Lab Resources and Facilities</h3>
+                <ul>
+                    <li><strong>Equipment:</strong> State-of-the-art tools, including 3D printers, microcontrollers, sensors, and prototyping kits.</li>
+                    <li><strong>Software:</strong> Access to licensed software for simulation, design, and coding purposes.</li>
+                    <li><strong>Workspace:</strong> A dedicated space for brainstorming, experimentation, and collaborative project development.</li>
+                </ul>
+            
+                <h3>Opportunities and Engagement</h3>
+                <ul>
+                    <li><strong>Workshops and Training:</strong> Hands-on sessions on robotics, coding, hardware design, and emerging technologies.</li>
+                    <li><strong>Mentorship Programs:</strong> Experienced faculty and senior members guide students on project execution and technical skills.</li>
+                    <li><strong>Industry Collaborations:</strong> Partnerships with organizations to provide funding, internships, and exposure to real-world challenges.</li>
+                </ul>
+            
+                <p>The R&D Lab is the heartbeat of Marvel Technical Club, where innovation meets execution. It empowers students to think critically, work collaboratively, and push the boundaries of what's possible in engineering and technology.</p>
+            </section>
+            <section class="gallery">
+                <h2>Gallery</h2>
+                <p>Take a glimpse of Marvel in action:</p>
+                <div class="image-grid">
+                    <img src="marvel/marvel1.jpg" alt="Event 1" />
+                    <img src="marvel/marvel2.jpg" alt="Event 2" />
+                    <img src="marvel/marvel4.jpg" alt="Event 3" />
+                </div>
+            </section>
+            
+             <section class="about_us">
+            <h2>For More Information</h2>
+            <p>Connect with us through the following platforms:</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/uvce.eunoia/?igsh=MTVyenF1NXd1ejdlZQ%3D%3D" target="_blank" class="social-link">
-                    <img src="/images/instagram_logo.jpg" alt="Instagram" class="social-icon"> Instagram
-                </a>
-               
+                <a href="https://hub.uvcemarvel.in/" target="_blank">Visit Hub</a>
+                <a href="http://uvcemarvel.in/" target="_blank">Official Website</a>
             </div>
         </section>
-        
     </main>
-
-    <script src="marvel.js"></script>
-
-    
 </body>
 </html>
