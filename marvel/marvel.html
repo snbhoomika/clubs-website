@@ -45,7 +45,115 @@
             width: 60px;
             height: 60px;
         }
+         /* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
 
+.logo-container img {
+  width: 50px;
+  margin-right: 15px; /* Increased margin for spacing */
+}
+
+/* Navigation bar styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f0f0f0;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Added gap between buttons for consistent spacing */
+}
+
+/* Navigation items */
+.nav-links li {
+  padding: 10px 20px; /* Add padding around buttons for better touch target */
+  border-radius: 25px; /* Rounded corners for the buttons */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+}
+
+/* Button styles */
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px; /* Increase font size for readability */
+  display: block;
+}
+
+/* Hover effects for navigation links */
+.nav-links li:hover {
+  background-color: #859466; /* Darker background color on hover */
+  transform: translateY(-5px); /* Slight hover effect */
+}
+
+/* Active state (when a link is clicked) */
+.nav-links li.active {
+  background-color: #859466; /* Highlight active button */
+}
+
+/* Burger menu styling (for mobile) */
+.burger {
+  display: none;
+  flex-direction: row;
+  cursor: pointer;
+  gap: 5px; /* Space out the lines for better look */
+}
+
+.burger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #859466;
+  transition: all 0.3s ease;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Hide navigation links on small screens */
+      flex-direction: column;
+      gap: 15px;
+      background-color: #333;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-links.active {
+      display: flex; /* Show the menu when the "active" class is added */
+  }
+
+  .burger {
+      display: flex; /* Show burger menu */
+  }
+  
+  .burger.toggle .line:nth-child(1) {
+      transform: rotate(45deg) translateY(6px); /* Burger to X */
+  }
+
+  .burger.toggle .line:nth-child(2) {
+      opacity: 0; /* Hide the middle line */
+  }
+
+  .burger.toggle .line:nth-child(3) {
+      transform: rotate(-45deg) translateY(-6px); /* Burger to X */
+  }
+
+  .nav-links li {
+      width: 100%; /* Make buttons full-width on mobile */
+      text-align: center; /* Center align links */
+      padding: 15px 0;
+  }
+}
         /* Intro Section */
         .intro {
             background: linear-gradient(to right, #6a11cb, #2575fc);
@@ -174,23 +282,29 @@
     </style>
 </head>
 <body>
-     <!-- Hamburger Menu -->
-     <div class="menu">
-        <div class="hamburger-icon">☰</div>
-        <div class="menu-items">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#upcoming events">Upcoming events</a>
-            <a href="#activities">Activities</a>
-            <a href="#contacts">Contacts</a>
+  
 
         </div>
     </div>
-    <nav class="navbar">
-        <h1>Marvel</h1>
-        <img src="/tech page/marvellogo.png" alt="Marvel Logo">
-    </nav>
-
+    
+    <header>
+        <div class="logo-container">
+          <img src="/tech page/marvellogo.png" alt="Your Club Logo">
+          <h1>UVCE Marvel</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </header>
     <main>
         <section class="intro">
             <h2>Welcome to Marvel Technical Club</h2>
@@ -201,26 +315,26 @@
             <h2>Overview of Marvel Club</h2>
             <p>Marvel Technical Club is a vibrant student-driven organization at the University Visvesvaraya College of Engineering (UVCE), Bengaluru. With an unwavering commitment to innovation and learning, the club has become a hub for aspiring engineers and technologists to thrive. Here's what makes Marvel unique:</p>
         
-            <h3>Core Objectives</h3>
+            <h2>Core Objectives</h2>
             <ul>
-                <li><strong>Skill Development:</strong> Cultivating proficiency in areas such as programming, robotics, electronics, and innovative engineering design through hands-on workshops and activities.</li>
-                <li><strong>Knowledge Exchange:</strong> Hosting knowledge-sharing sessions, guest lectures, and seminars to keep members updated on emerging trends and technologies.</li>
-                <li><strong>Innovation Platform:</strong> Encouraging students to think outside the box and develop creative solutions for real-world problems.</li>
-                <li><strong>Community Building:</strong> Promoting teamwork, networking, and collaboration among students from diverse engineering disciplines.</li>
+                <li><strong>Skill Development</strong></li>
+                <li><strong>Knowledge Exchange</strong> </li>
+                <li><strong>Innovation Platform</strong></li>
+                <li><strong>Community Building</strong> </li>
             </ul>
         
-            <h3>Key Activities and Events</h3>
+            <h2>Key Activities and Events</h2>
             <ul>
-                <li><strong>Hackathons:</strong> Organizing in-house and inter-college hackathons to solve industry-relevant challenges.</li>
-                <li><strong>Workshops:</strong> Covering topics like AI/ML, IoT, robotics, blockchain, and app development.</li>
-                <li><strong>Competitions:</strong> Hosting technical quizzes, coding challenges, and engineering design contests to foster a competitive spirit.</li>
-                <li><strong>Outreach Programs:</strong> Collaborating with schools and communities to promote STEM education and inspire the next generation.</li>
+                <li><strong>Hackathons</strong> </li>
+                <li><strong>Workshops</strong> </li>
+                <li><strong>Competitions</strong></li>
+                <li><strong>Outreach Programs</strong></li>
             </ul>
         
-            <h3>Community and Mentorship</h3>
+            <h2>Community and Mentorship</h2>
             <p>The club thrives on a culture of mentorship and mutual growth. Senior members guide juniors on various technical and professional fronts, ensuring a supportive learning environment.</p>
         
-            <h3>Impact and Achievements</h3>
+            <h2>Impact and Achievements</h2>
             <ul>
                 <li>Represented UVCE at multiple national and international technical competitions, winning accolades and recognition.</li>
                 <li>Developed impactful projects, such as smart healthcare solutions, eco-friendly automation systems, and AI-based tools.</li>
@@ -232,33 +346,33 @@
                 <h2>Marvel Club R&D Lab</h2>
                 <p>The Research and Development (R&D) Lab of Marvel Technical Club serves as a center for experimentation, learning, and innovation. Designed to empower students, the lab provides resources and mentorship to transform ideas into tangible outcomes. Here's an in-depth look at its initiatives:</p>
             
-                <h3>Core Goals</h3>
+                <h2>Core Goals</h2>
                 <ul>
-                    <li><strong>Technological Innovation:</strong> Enable students to explore emerging technologies and apply them to solve practical problems.</li>
-                    <li><strong>Research Culture:</strong> Foster an environment where students engage in research-oriented projects, preparing them for academia and industry.</li>
-                    <li><strong>Interdisciplinary Collaboration:</strong> Encourage projects that integrate concepts from multiple engineering fields, promoting diverse perspectives.</li>
+                    <li><strong>Technological Innovation</strong> </li>
+                    <li><strong>Research Culture</strong> </li>
+                    <li><strong>Interdisciplinary Collaboration</strong> </li>
                 </ul>
             
-                <h3>Focus Areas</h3>
+                <h2>Focus Areas</h2>
                 <ul>
-                    <li><strong>Robotics:</strong> Building autonomous systems and intelligent robots capable of performing complex tasks.</li>
-                    <li><strong>Artificial Intelligence & Machine Learning:</strong> Developing predictive models, AI-powered tools, and intelligent systems.</li>
-                    <li><strong>Internet of Things (IoT):</strong> Creating smart devices and interconnected systems for real-time monitoring and automation.</li>
-                    <li><strong>Embedded Systems:</strong> Prototyping hardware solutions using microcontrollers and sensors for various applications.</li>
+                    <li><strong>Robotics</strong> </li>
+                    <li><strong>Artificial Intelligence & Machine Learning</strong> </li>
+                    <li><strong>Internet of Things (IoT)</strong> </li>
+                    <li><strong>Embedded Systems</strong></li>
                 </ul>
             
-                <h3>Lab Resources and Facilities</h3>
+                <h2>Lab Resources and Facilities</h2>
                 <ul>
-                    <li><strong>Equipment:</strong> State-of-the-art tools, including 3D printers, microcontrollers, sensors, and prototyping kits.</li>
-                    <li><strong>Software:</strong> Access to licensed software for simulation, design, and coding purposes.</li>
-                    <li><strong>Workspace:</strong> A dedicated space for brainstorming, experimentation, and collaborative project development.</li>
+                    <li><strong>Equipment</strong> </li>
+                    <li><strong>Software</strong> </li>
+                    <li><strong>Workspace</strong></li>
                 </ul>
             
-                <h3>Opportunities and Engagement</h3>
+                <h2>Opportunities and Engagement</h2>
                 <ul>
-                    <li><strong>Workshops and Training:</strong> Hands-on sessions on robotics, coding, hardware design, and emerging technologies.</li>
-                    <li><strong>Mentorship Programs:</strong> Experienced faculty and senior members guide students on project execution and technical skills.</li>
-                    <li><strong>Industry Collaborations:</strong> Partnerships with organizations to provide funding, internships, and exposure to real-world challenges.</li>
+                    <li><strong>Workshops and Training</strong></li>
+                    <li><strong>Mentorship Programs</strong> </li>
+                    <li><strong>Industry Collaborations</strong> </li>
                 </ul>
             
                 <p>The R&D Lab is the heartbeat of Marvel Technical Club, where innovation meets execution. It empowers students to think critically, work collaboratively, and push the boundaries of what's possible in engineering and technology.</p>
@@ -267,9 +381,9 @@
                 <h2>Gallery</h2>
                 <p>Take a glimpse of Marvel in action:</p>
                 <div class="image-grid">
-                    <img src="marvel/marvel1.jpg" alt="Event 1" />
-                    <img src="marvel/marvel2.jpg" alt="Event 2" />
-                    <img src="marvel/marvel4.jpg" alt="Event 3" />
+                    <img src="/marvel/marvel1.jpeg" alt="Event 1" />
+                    <img src="/marvel/marvel2.jpeg" alt="Event 2" />
+                    <img src="/marvel/marvel3.jpg" alt="Event 3" />
                 </div>
             </section>
             
@@ -282,5 +396,6 @@
             </div>
         </section>
     </main>
+    <script src ="marvel.js"> </script>
 </body>
 </html>
