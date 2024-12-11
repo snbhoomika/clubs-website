@@ -1,3 +1,4 @@
+/* Universal styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +7,13 @@
   }
   
   body {
-    background-image: url('gdsc.jpg');
+    background-image: url('/Chronicles/microphone-grey.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    color: #e0f7fa;
+    color: #f6f8f8;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    
   }
   /* Hamburger Menu Styles */
 .menu {
@@ -37,7 +37,7 @@
   top: 40px;
   right: 0;
   background-color: rgba(240, 233, 233, 0.9);
-  border: 1px solid #4b4a4a;
+  border: 1px solid #6f6c6c;
   padding: 10px;
   border-radius: 5px;
   z-index: 1000;
@@ -55,11 +55,55 @@
 }
 
 .menu-items a:hover {
-  background-color: #444444;
+  background-color: #818282;
   color: #ffffff;
   border-radius: 3px;
 }
-  
+  /* Hamburger Menu Styles */
+.menu {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 1000;
+  text-align: right;
+}
+
+.hamburger-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: #7c7979;
+}
+
+.menu-items {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: rgba(254, 254, 254, 0.9);
+  border: 1px solid #6f6c6c;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.menu.active .menu-items {
+  display: flex;
+}
+
+.menu-items a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+
+.menu-items a:hover {
+  background-color: #818282;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
   /* Background overlay for readability */
   
   
@@ -76,7 +120,7 @@
     font-size: 2.5em;
     font-weight: bold;
     margin-right: 15px;
-    color: #edf0f0;
+    color: #fafafa;
   }
   
   .navbar img {
@@ -92,22 +136,20 @@
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
-    color: #f3f5f6;
+    color: #f7f9f9;
     text-align: justify;
     font-size: 1.1em;
     line-height: 1.8;
   }
-  
-  
   
   /* Criteria to Join Section */
   .criteria {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(54, 54, 54, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
-    color: #f8fafb;
+    color: #f6f7f7;
     font-size: 1.1em;
     line-height: 1.8;
     text-align: justify;
@@ -119,31 +161,12 @@
     color: #ffffff;
     margin-bottom: 15px;
   }
-  .events {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background: rgba(54, 54, 54, 0.7);
-    border-radius: 8px;
-    color: #ffffff;
-    font-size: 1.1em;
-    line-height: 1.8;
+  .criteria h3{
     text-align: center;
-}
-
-.events h3 {
-    font-size: 1.6em;
+    font-size: 1.4em;
+    color: #ffffff;
     margin-bottom: 15px;
-    color: #f7f7f7;
-}
-
-.events ul {
-    list-style: none;
-    padding: 0;
-}
-
-
-
+  }
   
   /* Events Conducted Section */
   .events_conducted {
@@ -153,9 +176,9 @@
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(87, 87, 87, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
-    color: #fbfdfe;
+    color: #fdfefe;
   }
   
   .events_conducted .content {
@@ -178,7 +201,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 15px;
   }
   
   .slider img {
@@ -197,9 +220,9 @@
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(83, 82, 82, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
-    color: #fcfeff;
+    color: #fbfcfc;
     text-align: center;
     font-size: 1.1em;
     line-height: 1.8;
@@ -243,7 +266,7 @@
   .social-link {
     margin: 0 10px;
     text-decoration: none;
-    color: #f8f9f9;
+    color: #f8fafa;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -283,5 +306,3 @@
     }
   }
   
-  
-    

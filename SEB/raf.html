@@ -1,0 +1,147 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Executive Body</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+        }
+        header img {
+            height: 50px;
+            margin-right: 20px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .block-content {
+            padding: 20px;
+        }
+        .contact {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .contact a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        @media (min-width: 768px) {
+            .block {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+        .slideshow {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+        .slides img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+        .slides img.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="icon_logo.jpg" alt="Club Logo">
+    <h1>Student Executive Body</h1>
+</header>
+
+<div class="container">
+    <div class="block">
+        <div class="block-content">
+            <h2>Information Block 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ultrices eros. Aenean venenatis nibh et massa tincidunt.</p>
+        </div>
+        <img src="photo1.jpg" alt="Transformation Photo 1">
+    </div>
+    <div class="block">
+        <div class="block-content">
+            <h2>Information Block 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ultrices eros. Aenean venenatis nibh et massa tincidunt.</p>
+        </div>
+        <div class="slideshow">
+            <div class="slides">
+                <img src="photo1.jpg" alt="Photo 1" class="active">
+                <img src="photo2.jpg" alt="Photo 2">
+                <img src="photo3.jpg" alt="Photo 3">
+                <img src="photo4.jpg" alt="Photo 4">
+                <img src="photo5.jpg" alt="Photo 5">
+                <img src="photo6.jpg" alt="Photo 6">
+            </div>
+        </div>
+    </div>
+    <div class="block">
+        <div class="block-content">
+            <h2>Information Block 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ultrices eros. Aenean venenatis nibh et massa tincidunt.</p>
+        </div>
+        <img src="photo3.jpg" alt="Transformation Photo 3">
+    </div>
+</div>
+
+<div class="contact">
+    <h2>Contact Us</h2>
+    <p>Follow us on Instagram: <a href="https://www.instagram.com/yourclubprofile">@yourclubprofile</a></p>
+    <p>Email: <a href="mailto:info@yourclub.com">info@yourclub.com</a></p>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slides img');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 8000); // Change every 8 seconds
+
+    // Initial display
+    showSlide(currentSlide);
+</script>
+
+</body>
+</html>
