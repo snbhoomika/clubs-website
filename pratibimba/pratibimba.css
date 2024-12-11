@@ -5,15 +5,15 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #0c0c0c;
+    background-color: #131212;
     color: #fffdfd;
     overflow-x: hidden;
 }
 
 /* Header Styles */
 header {
-    background-color: #f8f8f8;
-    color: #1b1a1a;
+    background-color: #141414;
+    color: #f8f3f3;
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -51,7 +51,7 @@ header {
 }
 
 .navbar img {
-    border-radius: 50%;
+    border-radius: 100%;
     border: 3px solid #ffffff;
 }
 
@@ -88,7 +88,7 @@ header {
 }
 
 .menu-items a {
-    color: #333;
+    color: #070707;
     text-decoration: none;
     padding: 8px 15px;
     font-weight: bold;
