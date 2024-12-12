@@ -19,7 +19,7 @@
     color: white;
 }
 .aboutinfo {
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .center-align {
@@ -31,33 +31,37 @@
     margin-bottom: 0%;
 }
 .head {
-    font-size: 60px;
+    font-size: 45px;
     font-weight: bold;
 }
 .gradient {
-    color: rgb(213, 0, 0);
+    color: rgb(155, 65, 65);
 }
 
 .eventhead {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     width: fit-content;
 }
-.descrpt {
-    display: block;
+.info.eventhead.descrpt {
+    display:fixed;
     min-width: 350px;
     max-width: 1100px;
-    line-height: 30px;
-    font-size: 21px;
+    line-height: 20px;
+    font-size: 15px;
     word-spacing: 10px;
+    text-align: center;
+}
+.events.head-gradient.eventinfo.descrpt{
+    text-align:justify;
 }
 
 #eventdescrpt {
-    max-width: 900px;
+    max-width: 300px;
 }
 
 .eventimg {
-    width: 400px;
+    width: 200px;
     position: absolute;
     right: 50px;
     top: 100px;
