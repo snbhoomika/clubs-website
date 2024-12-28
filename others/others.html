@@ -1,0 +1,156 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Technical</title>  
+  <style>  
+    /* General styles */  
+    html, body {  
+        height: 100%;  
+        margin: 0;  
+        padding: 0;  
+        font-family: Arial, sans-serif;  
+    }  
+
+ /* Background image and gradient */
+ body {
+    background-image: 
+      linear-gradient(rgba(12, 12, 12, 0.8), transparent),
+      url('/tech\ page/tech.jpg');
+    background-size: 50%; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image tiling */
+    text-align: center;
+    background-attachment: fixed; /* Fixes background during scrolling */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+
+
+   
+
+    /* Heading styling */  
+    h1 {  
+        color: rgb(249, 248, 248);  
+        margin-top: 150px;  
+        font-size: 5em;  
+    }  
+
+    /* Container for clubs */  
+    .clubs-container {  
+        display: flex;  
+        flex-wrap: wrap;  
+        justify-content: center;  
+        gap: 20px;  
+        margin: 20px auto;  
+        max-width: 1200px;  
+        padding: 0 10px;  
+    }  
+
+    /* Club card styling */  
+    .club {  
+        background-color: white;  
+        border: 1px solid #ddd;  
+        border-radius: 10px;  
+        padding: 20px;  
+        width: 200px;  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+        text-align: center;  
+        transition: transform 0.3s ease, box-shadow 0.3s ease;  
+    }  
+
+    .club:hover {  
+        transform: translateY(-5px);  
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+    }  
+
+    /* Logo button styling */  
+    .logo-button {  
+        display: inline-block;  
+        border: none;  
+        outline: none;  
+        text-decoration: none;  
+        background-color: transparent;  
+        cursor: pointer;  
+        transition: transform 0.3s ease, box-shadow 0.3s ease;  
+    }  
+
+    .logo-button:hover {  
+        transform: scale(1.1);  
+    }  
+
+    .logo {  
+        width: 100px;  
+        height: 100px;  
+        object-fit: contain;  
+        border-radius: 50%; /* Optional: circular logos */  
+    }  
+
+    /* Responsive design */  
+    @media (max-width: 768px) {  
+        .club {  
+            width: 150px;  
+        }  
+
+        h1 {  
+            font-size: 2em;  
+        }  
+    }  
+  </style>  
+</head>  
+<body>  
+  <h1>Technical</h1>  
+  <div class="clubs-container">  
+    <!-- Club 1 -->  
+    <div class="club">  
+      <a href="/marvel/marvel.html" class="logo-button">  
+        <img src="marvellogo.png" alt="Marvel Logo" class="logo">  
+        <P>Marvel</P>
+      </a>  
+    </div>  
+
+    <!-- Club 2 -->  
+    <div class="club">  
+      <a href="/GDG/GDG.html" class="logo-button">  
+        <img src="/GDG/GDG LOGO.png" alt="GDG Logo" class="logo">
+        <p>GDG</p>  
+      </a>  
+    </div>  
+
+    <!-- Club 3 -->  
+    <div class="club">  
+      <a href="/IEEE/IEEE.html" class="logo-button">  
+        <img src="ieee (2).png" alt="IEEE Logo" class="logo"> 
+        <P>IEEE</P> 
+      </a>  
+    </div>  
+
+    <!-- Club 4 -->  
+    <div class="club">  
+      <a href="/E cell/e cell.html" class="logo-button">  
+        <img src="/E cell/E CELL logo.png" alt="E-CELL Logo" class="logo"> 
+        <p>E Cell</p> 
+      </a>  
+    </div>  
+
+    <!-- Club 5 -->  
+    <div class="club">  
+      <a href="/praveg/praveg.html" class="logo-button">  
+        <img src="/praveg/praveg1logo.png" alt="Praveg Logo" class="logo"> 
+        <p>Praveg</p> 
+      </a>  
+    </div>  
+
+    <!-- Club 6 -->  
+    <div class="club">  
+      <a href="/I80 DC/180 DC.html" class="logo-button">  
+        <img src="/I80 DC/180.jpg" alt="180 DC Logo" class="logo">  
+        <p>180 DC</p>
+      </a>  
+    </div>  
+  </div>  
+</body>  
+</html>
