@@ -43,44 +43,8 @@
         padding: 0 10px;  
     }  
 
-    /* Club card styling */  
-    .club {  
-        background-color: white;  
-        border: 1px solid #ddd;  
-        border-radius: 10px;  
-        padding: 20px;  
-        width: 200px;  
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
-        text-align: center;  
-        transition: transform 0.3s ease, box-shadow 0.3s ease;  
-    }  
 
-    .club:hover {  
-        transform: translateY(-5px);  
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
-    }  
 
-    /* Logo button styling */  
-    .logo-button {  
-        display: inline-block;  
-        border: none;  
-        outline: none;  
-        text-decoration: none;  
-        background-color: transparent;  
-        cursor: pointer;  
-        transition: transform 0.3s ease, box-shadow 0.3s ease;  
-    }  
-
-    .logo-button:hover {  
-        transform: scale(1.1);  
-    }  
-
-    .logo {  
-        width: 100px;  
-        height: 100px;  
-        object-fit: contain;  
-        border-radius: 50%; /* Optional: circular logos */  
-    }  
 
     /* Responsive design */  
     @media (max-width: 768px) {  
@@ -92,8 +56,86 @@
             font-size: 2em;  
         }  
     }  
-  </style>  
-</head>  
+  
+
+.club {
+  display: flex; /* Allows flexible alignment */
+  flex-direction: column; /* Stacks image and text vertically */
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  background-color: white; /* Background color for the button */
+  border: 1px solid #ddd; /* Border for the button */
+  border-radius: 10px; /* Rounds the corners */
+  padding: 20px; /* Inner spacing for the button */
+  width: 200px; /* Set width for the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  text-align: center; /* Centers text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  cursor: pointer; /* Changes cursor to pointer */
+}
+
+.club:hover {
+  transform: translateY(-5px); /* Adds hover animation */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Emphasizes shadow */
+}
+
+.club a {
+  display: block; /* Makes the entire `a` tag behave like a block for clicking */
+  width: 100%; /* Fills the entire club container */
+  height: 100%; /* Ensures it covers the full button */
+  text-decoration: none; /* Removes underline from the text */
+  color: inherit; /* Ensures text color matches the container */
+}
+
+.club img {
+  width: 100%; /* Makes the image responsive */
+  max-width: 100px; /* Ensures the image doesn't get too large */
+  height: auto; /* Maintains the aspect ratio */
+  margin-bottom: 10px; /* Adds space between the image and text */
+}
+
+.club p {
+  margin: 0; /* Removes default margin */
+  font-size: 1rem; /* Sets a standard font size */
+  color: #333; /* Sets text color */
+}
+
+
+</style>  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <body>  
   <h1>Cultural-Adhamya</h1>  
   <div class="clubs-container">  
