@@ -116,9 +116,22 @@
     color: #ffffff;
     margin-bottom: 15px;
   }
+  .criteria h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  .criteria h3{
+    text-align: center;
+    font-size: 1.4em;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
   
   /* Events Conducted Section */
-  .events_conducted {
+  .events-conducted {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -130,7 +143,7 @@
     color: #b3e5fc;
   }
   
-  .events_conducted .content {
+  .events-conducted .content {
     width: 50%;
     padding-right: 20px;
     text-align: justify;
@@ -138,7 +151,7 @@
     line-height: 1.8;
   }
   
-  .events_conducted .content h3 {
+  .events-conducted .content h3 {
     text-align: center;
     font-size: 2em;
     color: #ffffff;
@@ -146,16 +159,22 @@
   }
   
   .events_conducted .slider {
-    width: 45%;
+    width: 25%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 15px;
   }
   
+  /*.slider {
+    display: flex;
+    flex-wrap: wrap; /* Allow
+    justify-content: center;
+    gap: 10px; 
+}
   .slider img {
-    width: 50%;
-    height: 300px;
+    width: 70%;
+    height: 320px;
     border-radius: 8px;
     transition: transform 0.3s ease;
     align-items: center;
@@ -164,9 +183,33 @@
   .slider img:hover {
     transform: scale(1.05);
   }
+*/
+
+
+/* Styling for the slider */
+.slider {
+  display: grid; /* Use grid layout for rows and columns */
+  grid-template-columns: repeat(2, 1fr); /* Two images per row */
+  gap: 20px; /* Space between images */
+  justify-content: center; /* Center the grid */
+  align-items: center; /* Center images vertically */
+}
+
+.slider img {
+  width: 100%; /* Occupy full width of the grid column */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.slider img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
   
   /* About Us Section */
-  .about_us {
+  #about_us {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
@@ -178,13 +221,13 @@
     line-height: 1.8;
   }
   
-  .about_us h2 {
+  #about_us h2 {
     font-size: 2em;
     color: #ffffff;
     margin-bottom: 15px;
   }
   
-  .about_us p {
+  #about_us p {
     margin-bottom: 10px;
   }
   
