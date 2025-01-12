@@ -1,3 +1,7 @@
+
+
+
+
 let currentIndex = 0; // Index of the current slide
 const slides = document.querySelectorAll('.slide'); // Get all slides
 
