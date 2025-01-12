@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,19 +8,322 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vachana</title>
-    <link rel="stylesheet" href="vachana.css">
     <link rel="shortcut icon" href="images/vachana-lion.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(0, 0, 13);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hamburger-menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .navbar {
+            display: none;
+            text-align: center;
+            background-color: rgba(0, 0, 30, 0.9);
+            padding: 20px;
+        }
+
+        .navbar.active {
+            display: block;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 10px 0;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .gradient {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .descrpt {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .center-align {
+            text-align: center;
+        }
+
+        .instalink a {
+            color: white;
+            text-decoration: none;
+        }
+
+        hr {
+            border-color: white;
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover effect for links */
+        .navbar ul li a:hover {
+            color: #c04444;
+        }
+        .back-button-section {
+    position: absolute;
+    top: 20px;  /* Distance from the top of the screen */
+    left: 20px; /* Distance from the left edge of the screen */
+}
+
+.back-button {
+    background-color: #5c1a1a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+    position:fixed;
+}
+
+.back-button:hover {
+    background-color: #764242;
+}
+
+.back-button span {
+    margin-left: 5px;
+}
+
+
+
+        /* Styling for the Upcoming Events heading */
+        .upcoming-events h2 {
+            text-align: center;
+            color: #f78467;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .navbar {
+            display: none;
+            text-align: center;
+            background-color: rgba(0, 0, 30, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        /* New styles to ensure consistent appearance for the "Upcoming Events" link */
+        .navbar ul li a[href="#upcoming-events"] {
+            color: rgb(211, 87, 87);
+            font-size: 18px;
+        }
+
+        .navbar ul li a[href="#upcoming-events"]:hover {
+            color: #feb47b;
+        }
+
+        /* Back Button Section */
+        .back-button-section {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .back-button {
+            background-color: #5c1a1a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .back-button:hover {
+            background-color: #764242;
+        }
+
+        .back-button span {
+            margin-left: 5px;
+        }
+
+        /* Event Styling */
+
+        #events {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+    margin-top: 20px; /* Add some space from the top */
+}
+
+        .event-container {
+            display: flex;
+            align-items: center; /* Vertically align items */
+            margin-bottom: 20px;
+        }
+
+        .event-image {
+            width: 300px;
+            height: auto;
+            margin-right: 20px; /* Space between image and text */
+        }
+
+        .event-description {
+            max-width: 600px; /* Set a max width for the text */
+        }
+
+        .eventhead {
+            font-size: 20px;
+            font-weight: bold;
+            color: #feb47b;
+        }
+
+        .descrpt {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Heading for Events Conducted */
+        .event-container h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #feb47b;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .center-align {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #contact {
+            font-size: 24px;
+            color: white;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        .instalink a {
+            display: inline-block;
+            margin: 10px 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: transform 0.3s ease;
+            color: #ff7e5f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hover effect for the contact links */
+        .instalink a:hover {
+            text-shadow: 0px 0px 10px #ff7e5f;
+            transform: scale(1.1);
+        }
+
+        hr {
+            border-color: #feb47b;
+            margin: 20px 0;
+        }
+   /* Styling for the Upcoming Events heading */
+.upcomingevents h2 {
+    text-align: center;
+    color: #ff7e5f; /* Change the color to your desired color */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.upcomingevents ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.upcomingevents ul li {
+    font-size: 18px; /* Optional: adjust the font size of the list item */
+    text-align: center; /* Optional: center-align the list item */
+}
+
+    </style>
 </head>
 
-<body style="background-color: rgb(0, 0, 13); font-family: Poppins;">
-    <!-- Header -->
+<body>
+    <!-- Header with Hamburger Icon -->
     <div class="header">
         <img src="images/icon-title.png" style="display: block; margin: 0 auto;" width="300px" alt="Vachana Logo">
-    </div>
+        
+        <!-- Hamburger Icon -->
+        <div class="hamburger-menu" id="hamburger-menu">
+            &#9776;
+        </div>
 
-    <!-- Vachana Info -->
-    <div class="info">
+        <!-- Navigation Menu -->
+        <div class="navbar" id="navbar">
+            <ul>
+                <li><a href="#info">Vachana Info</a></li>
+                <li><a href="#events">Events Conducted</a></li> <!-- Corrected link for Events Conducted -->
+                <li><a href="#upcomingevents">Upcoming Events</a></li>
+                <li><a href="#eligibility">Eligibility</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+     
+        <div class="back-button-section">
+            <!--JavaScript-based back navigation -->
+            <!--<button class="back-button" onclick="window.history.back()">
+                <span>&larr; Back</span>
+            </button>-->
+        
+            <!-- Fallback navigation -->
+            <a href="/non tech page/non-technical.html" class="back-button">
+                &larr;
+            </a>
+        </div>
+        
+    
+    <div class="info" id="info">
         <div class="head gradient">VACHANA</div>
         <div class="descrpt">
             Vachana helps you find your voice and refine skills like debating, stand-up comedy, mimicry, and public speaking. With regular events and seminars, it offers a platform to build confidence, enhance vocabulary, and prepare for interviews and professional settings.
@@ -26,38 +332,46 @@
         </div>
     </div>
 
-    <!-- Events -->
-    <div class="events">
-        <div class="head-gradient">EVENTS</div>
-        <div class="eventinfo">
-            <ul style="list-style-type: none; position: relative;">
-                <li>
-                    <dl class="eventhead">WOLF OF RED STREET</dl>
-                    <dd class="descrpt">What's the use of a moon weapon in the hands of a coward? What good is a mirror in the hands of a blind person? What use is a philosopher's silence?
-                        <br>
-                        In celebration of the grand festival of Kannada Rajyotsava, we present a golden platform for thinkers and debaters. 'Wolf of Red Street' is the ultimate competition showcasing the best of Kannada language's literary knowledge, persuasive skills, oratory talents, business acumen, and observational skills.
-                    </dd>
-                    <!---<img src="images/wolfofredstreet-Photoroom.png" class="eventimg" alt="Wolf of Red Street Event" width="200" height="200">-->
-                </li>
-            </ul>
-        </div>
+   
+<div id="events" class="event-container">
+    <h2>Events Conducted</h2>
+</div>
 
-        <div class="eventinfo" style="position: relative;">
-            <ul style="list-style-type: none;">
-                <li>
-                    <dl class="eventhead">ಉಳಿದವರು ಕಂಡಂತೆ</dl>
-                    <dd class="descrpt">Dive into the world of crime with "ಉಳಿದವರು ಕಂಡಂತೆ"! 
-                        <br>
-                        Get ready to test your wits by solving puzzles and challenges that will secure your spot in the thrilling crime investigation. Over the course of two days, you'll unleash your inner Sherlock Holmes, gathering clues, cracking codes, and uncovering the truth. This immersive experience promises to be an unforgettable journey into the realm of mystery and investigation, putting your intelligence and problem-solving skills to the ultimate test.
-                    </dd>
-                   <!---- <img src="images/ulidavaru-kandante-Photoroom.png" class="eventimg" alt="Crime Investigation Event"  height = "200" width = "200">-->
-                </li>
-            </ul>
+    
+    <div class="event-container">
+        <img src="/Vachana/vachana images/wolfofredstreet-Photoroom.png" alt="Wolf of Red Street" class="event-image">
+        <div class="event-description">
+            <dl class="eventhead">WOLF OF RED STREET</dl>
+            <dd class="descrpt">
+                What's the use of a moon weapon in the hands of a coward? What good is a mirror in the hands of a blind person? What use is a philosopher's silence?
+                <br><br>
+                In celebration of the grand festival of Kannada Rajyotsava, we present a golden platform for thinkers and debaters. 'Wolf of Red Street' is the ultimate competition showcasing the best of Kannada language's literary knowledge, persuasive skills, oratory talents, business acumen, and observational skills.
+            </dd>
         </div>
     </div>
 
+    
+    <div class="event-container">
+        <img src="/Vachana/vachana images/ulidavaru-kandante-Photoroom.png" alt="Ulidavaru Kandante" class="event-image">
+        <div class="event-description">
+            <dl class="eventhead">ಉಳಿದವರು ಕಂಡಂತೆ</dl>
+            <dd class="descrpt">
+                Dive into the world of crime with "ಉಳಿದವರು ಕಂಡಂತೆ"! 
+                <br><br>
+                Get ready to test your wits by solving puzzles and challenges that will secure your spot in the thrilling crime investigation. Over the course of two days, you'll unleash your inner Sherlock Holmes, gathering clues, cracking codes, and uncovering the truth. This immersive experience promises to be an unforgettable journey into the realm of mystery and investigation, putting your intelligence and problem-solving skills to the ultimate test.
+            </dd>
+        </div>
+    </div>
+
+    <section class="upcomingevents" id="upcomingevents">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>Coming Soon.....!</li>
+        </ul>
+    </section>
+
     <!-- Eligibility -->
-    <div class="head gradient">JOIN VACHANA ?</div>
+    <div class="head gradient" id="eligibility">WANNA JOIN VACHANA?</div>
     <div class="head gradient">ELIGIBILITY</div>
     <ul class="descrpt" style="list-style-type: none;">
         <li><span class="highlight">Love for Speech Activities:</span> If you enjoy debating, stand-up comedy, bargaining, lecturing, mimicry, or public speaking, this club is a perfect fit for you.</li>
@@ -67,15 +381,28 @@
         <li><span class="highlight">Positive Contribution:</span> Join us in making the club a lively community by being active and contributing your unique talents and perspectives.</li>
     </ul>
 
-    <!-- Links -->
-    <hr>
-    <div class="center-align">
-        <p class="aboutinfo center-align">About Us</p>
-    </div>
-    <div class="instalink center-align">
-        <img src="images/insta.ico" alt="Instagram Icon" title="Instagram" width="20px" style="display: inline-block;">
-        <a href="https://www.instagram.com/uvce.vachana/" id="instalink">Instagram</a>
-    </div>
+<hr>
+<div class="center-align" id="contact">
+    <p class="aboutinfo center-align">Contact Us</p>
+</div>
+<div class="instalink center-align">
+    <a href="https://uvcevachana.in/?fbclid=PAY2xjawHsR2VleHRuA2FlbQIxMQABprjSxuugnAwZ3tDUg7jD8iqM97CMr5CFQI9WDpspaCFIvyzlYa85LTFQfQ_aem_iCQUbsi3o2UPjSOJLwLMKA" target="_blank" class="contact-link">Website</a>
+</div>
+<div class="instalink center-align">
+    <a href="https://youtube.com/@uvce.vachana_sl?si=gwwt-UGlGa0Dhyz1" target="_blank" class="contact-link">YouTube</a>
+</div>
+<div class="instalink center-align">
+    <a href="https://instagram.com/uvce.vachana" target="_blank" class="contact-link">Instagram</a>
+</div>
+
+    <script>
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navbar = document.getElementById('navbar');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

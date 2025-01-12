@@ -1,3 +1,6 @@
+
+
+ 
 body {
     background-image: url("/tatva/tatvabg.jpg");
     background-size: cover;
@@ -52,6 +55,29 @@ body {
   background-color: #818282;
   color: #ffffff;
   border-radius: 3px;
+}
+
+
+.back-button {
+    background-color: #5c1a1a; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 10px; /* Margin around the button */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-flex; /* Flexbox for aligning icon and text */
+    align-items: center; /* Vertically center the icon and text */
+    text-decoration: none;
+    position:fixed;
+}
+
+.back-button:hover {
+    background-color: #a7b3a7; /* Darker green on hover */
+}
+
+.back-button span {
+    margin-left: 5px; /* Space between icon and text */
 }
 
 body::before {
@@ -147,16 +173,26 @@ h1, h2, h3 {
     transition: opacity 9s ease;
 }
 
+/* Adjusting the images in the slider */
 .slider img {
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 60%; /* Adjust to reduce the size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto;
+    display: block; /* Center align images */
 }
 
-.slider .slide:first-child {
-    display: block;
-    opacity: 1;
+/* Adjusting text size */
+h1, h2, h3, p {
+    font-size: 1.5em; /* Increase text size */
+}
+
+/* Optional: Add more specific controls */
+.content li {
+    font-size: 1.2em; /* Increase list item text size */
+}
+
+.fade-in {
+    font-size: 1.2em; /* Increase text size for fade-in class */
 }
 
 /* Animation for fade-in effect */
@@ -205,5 +241,3 @@ h1, h2, h3 {
     height: 24px;
     margin-right: 5px;
 }
-
- 
