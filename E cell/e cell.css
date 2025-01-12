@@ -162,6 +162,13 @@
     margin-bottom: 15px;
   }
   
+  .criteria h3{
+    text-align: center;
+    font-size: 1.4em;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
   /* Events Conducted Section */
   .events_conducted {
     display: flex;
