@@ -3,76 +3,74 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #FFB6C1;
     color: black;
 }
+
+/* Navbar Styling */
 .navbar {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-    
-  .navbar h1 {
+}
+
+.navbar h1 {
     font-size: 2.5em;
     font-weight: bold;
     margin-right: 15px;
     color: #e0f7fa;
-  }
-  
-  .navbar img {
+}
+
+.navbar img {
     border-radius: 0%;
     border: 2px solid #ffffff;
     margin-left: 10px;
-  }
-/* Title Section Styling */
-.title-section {
+}
+
+/* Content and Image Section Styling */
+.content-section {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:  #008000;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
-    color: white;
+    gap: 20px;
 }
 
-/* Title Text Styling */
-.title-section h1 {
-    font-size: 20px; /* Title size adjusted */
-    margin: 0;
-    text-align: center;
-    flex: 1; /* Allows the text to center itself */
-}
-
-/* Club Logo Styling */
-.club-logo {
-    width: 100px; /* Adjust logo size */
-    height: auto;
-    margin-left: 20px; /* Adds space between the title and the logo */
-}
-
-/* Content Section Styling */
+/* Content Styling */
 .content {
-    padding: 20px;
-    font-size: 18px;
-    line-height: 1.6; /* Increased font size for content */
-}
-.content li {
-    font-size: 20px;
+    width: 60%; /* Content takes up 60% of the space */
+    font-size: 22px;
+    line-height: 1.9;
 }
 
-
-/* Bullet List Styling */
-ul {
+.content ul {
     list-style-type: disc;
     padding-left: 20px;
 }
 
-ul ul {
+.content ul ul {
     list-style-type: circle; /* Sub-bullet style */
     padding-left: 20px;
 }
 
-li {
-    margin-bottom: 40px;
+.content li {
+    margin-bottom: 20px;
+}
+
+/* Image Section Styling */
+.images {
+    width: 35%; /* Images take up 35% of the space */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between images */
+}
+
+.images img {
+    width: 100%; /* Images will take up 100% of the width of the container */
+    height: auto;
+    aspect-ratio: 16 / 9; /* Ensures images are the same size and consistent */
+    border: 2px solid #000; /* Optional border for styling */
+    border-radius: 8px; /* Optional rounded corners */
 }
