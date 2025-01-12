@@ -4,8 +4,15 @@
   <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>Cultural-Adhamya</title>  
-  <link rel="stylesheet" href="non-technical.css">  
+  <link rel="stylesheet" href="non-technical.css"> 
+  <div class="back-button-section">
+    <!-- Fallback navigation -->
+    <a href="/index.html" class="back-button">
+        &larr;
+    </a>
+</div> 
   <style>  
+
     /* General styles */  
     html, body {  
         height: 100%;  
@@ -98,6 +105,29 @@
   margin: 0; /* Removes default margin */
   font-size: 1rem; /* Sets a standard font size */
   color: #333; /* Sets text color */
+}
+
+.back-button {
+
+  background-color: #a7a3a3; /* Background color */
+  color: rgb(7, 7, 7); /* Text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  position: fixed; /* Fixed positioning */
+  top: 10px; /* Distance from the top */
+  left: 10px; /* Distance from the left */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.back-button:hover {
+  background-color: #a7b3a7; /* Darker green on hover */
+}
+
+.back-button span {
+  margin-left: 5px; /* Space between icon and text */
 }
 
 
