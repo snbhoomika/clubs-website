@@ -81,75 +81,26 @@ body {
   margin-left: 10px;
 }
 
-/* Intro Section */
-.intro {
-  max-width: 1000px;
-  margin: 10px auto;
+/* Content Section styling */
+.content-section {
+  display: none;
   padding: 20px;
-  background: #FFFACD;
-  border-radius: 8px;
-  color: #b76a6a;
-  text-align: justify;
-  font-size: 0.8em;
-  line-height: 1.8;
 }
 
-/* Events Conducted Section */
-.events_conducted {
-  display: flex;
-  justify-content: center;
-  align-items: middle;
-  max-width: 2000px;
-  margin: 10px auto;
-  padding: 20px;
-  background-color: #ae4b4b;
-  border-radius: 8px;
-  color: #b3e5fc;
-}
-
-.events_conducted .content {
-  width: 50%;
-  padding-right: 20px;
-  text-align: justify;
-  font-size: 1.4em;
-  line-height: 1.8;
-}
-
-.events_conducted .content h3 {
+.content-section h2 {
+  font-size: 2.5em;
+  color: #3b4a51;
   text-align: center;
-  font-size: 1.5em;
-  color: #FFFF00;
-  padding: 10px;
 }
 
-.events_conducted .slider {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  padding: 10px;
-}
-
-.slider img {
-  width: 60%;
-  height: auto;
-  max-height: 450px;
-  border-radius: 4px;
-  transition: transform 0.3s ease;
-}
-
-/* About Us Section */
-.about_us {
-  max-width: 900px;
-  margin: 10px auto;
-  padding: 15px;
-  background: #FFFACD;
-  border-radius: 8px;
-  color: #af4b4b;
+.home-content h1 {
+  font-size: 4em;
   text-align: center;
-  font-size: 1em;
-  line-height: 1.8;
+}
+
+.home-content img {
+  display: block;
+  margin: 10px auto;
 }
 
 /* Social Links */
@@ -168,41 +119,21 @@ body {
   font-weight: bold;
 }
 
-.social-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 5px;
-}
-
 /* Keyframe Animation */
 @keyframes fadeIn {
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .slider {
-      flex-direction: column;
-      align-items: center;
+  .content-section {
+    padding: 10px;
   }
 
-  .left-column, .right-column {
-      width: 100%;
-  }
-
-  .events_conducted {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .events_conducted .content, .events_conducted .slider {
-      width: 100%;
-  }
-
-  .intro, .criteria, .about_us {
-      padding: 15px;
+  .home-content h1 {
+    font-size: 3em;
   }
 }
