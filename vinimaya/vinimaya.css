@@ -62,8 +62,8 @@
   /* Background overlay for readability */
   
   .back-button {
-    background-color: #1a1919; /* Green background */
-    color: white; /* White text */
+    background-color: #928e8e; /* Green background */
+    color: rgb(22, 21, 21); /* White text */
     padding: 10px 20px; /* Padding for the button */
     border: none; /* No border */
     cursor: pointer; /* Pointer cursor on hover */
@@ -80,7 +80,7 @@
   }
   
   .back-button span {
-    margin-left: 5px; /* Space between icon and text */
+    margin-left: 3px; /* Space between icon and text */
   }
   /* Navbar styling */
   .navbar {
