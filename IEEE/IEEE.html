@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IEEE UVCE</title>
+    <title><h4>IEEE UVCE</h4></title>
     <link rel="stylesheet" href="IEEE.css">
 </head>
 <body>
@@ -12,11 +12,12 @@
     <div class="menu">
         <div class="hamburger-icon">☰</div>
         <div class="menu-items">
-            <a href="#description">Intro</a>
+            <a href="#description">Description</a>
             <a href="#activities">Events conducted</a>
             <a href="#upcoming events">Upcoming events</a>
 
             <a href="#contacts">Contacts</a>
+            <a href="#Contribution">Contacts</a>
 
         </div>
     </div>
@@ -27,11 +28,17 @@
             document.querySelector('.menu').classList.toggle('active');
         });
     </script>
+        <div class="back-button-section">
+            <!-- Fallback navigation -->
+            <a href="/tech page/tech.html" class="back-button">
+                &larr;
+            </a>
+        </div>
     <header>
         <div class="heading">
         <img src="ieee_logo.png" class="ieee-logo">
-        <p style="color:rgb(29, 28, 28); font-size: large;" >IEEE UVCE </p> 
-        <p style="color:rgb(27, 26, 26); font-size: small;" > striding Ahead </p>
+        <p style="color:bisque; font-size: 35px;" > IEEE UVCE </p> 
+        <p style="color:bisque; font-size: 29px;" > striding Ahead </p>
         </div>     
     </header>
     
@@ -48,22 +55,24 @@
 
     <!-- IEEE Programs Section  -->
     <section>
-    <div class="program-grid">
-        <h2>Programs</h2>
-        <hr>
-     <div class="grid-items">
-        <div>
-        <h3>1. Kagada</h3>
-        <p>An annual national-level technical student conference.</p>
-        <p>It includes: 
-            Paper Presentation,
-            Poster Presentation,
-            Project Presentation tracks</p>
-
-        <p>Aims to encourage research and innovation at the undergraduate level.</p>
-        <p>Humanitarian activities such as <b> "Ottige Kaliyona" </b> for teaching government school students and <b>"Food for Cause"</b> a charity food stall, are also part of this event.</p>
-        </div>  
-     </div>
+        <div class="program-grid">
+            <h2>Events-Conducted</h2>
+            <hr>
+            <div class="grid-items">
+                <h3>1. Kagada</h3>
+                <p>An annual national-level technical student conference.</p>
+                <p>It includes: 
+                    Paper Presentation,
+                    Poster Presentation,
+                    Project Presentation tracks</p>
+        
+                <p>Aims to encourage research and innovation at the undergraduate level.</p>
+                <p>Humanitarian activities such as <b> "Ottige Kaliyona" </b> for teaching government school students and <b>"Food for Cause"</b> a charity food stall, are also part of this event.</p>
+                 
+             </div>
+                
+             
+    
         
      <div class="grid-items">
         <h3>2. Codefury</h3>
@@ -86,7 +95,7 @@
 
     <!-- IEEE Contribution Section -->
     <section>
-     <div>
+     <div class="Contribution">
         <h2>Contribution</h2>
         <hr>
         <ul>
@@ -96,8 +105,9 @@
      </div> 
     </section>
 
+
     <!-- Footer Section---> 
-    <section>
+    <!-- <section> 
         <footer style=color:white>
             <p>©AIML 27</p>
         </footer>
