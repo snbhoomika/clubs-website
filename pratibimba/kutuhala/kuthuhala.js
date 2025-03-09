@@ -1,25 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-  function createFloatingElement(className) {
-      const element = document.createElement("div");
-      element.classList.add(className);
-      element.style.left = Math.random() * 90 + "vw";
-      element.style.top = Math.random() * 100 + "vh";
-      document.body.appendChild(element);
-  }
+    const hamburger = document.createElement("div");
+    hamburger.classList.add("hamburger");
+    hamburger.innerHTML = "☰";
+    document.querySelector("header").appendChild(hamburger);
 
-  function addFloatingElements() {
-      for (let i = 0; i < 5; i++) {
-          createFloatingElement("snake-ladder");
-          createFloatingElement("puzzle-piece");
-      }
-  }
+    const menu = document.querySelector(".menu");
 
-  addFloatingElements();
+    hamburger.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
 
-  document.addEventListener("scroll", function () {
-      document.querySelectorAll(".snake-ladder, .puzzle-piece").forEach((el) => {
-          let scrollY = window.scrollY;
-          el.style.transform = `translateY(${scrollY * 0.1}px)`;
-      });
-  });
+    // Close menu when a link is clicked (for better UX on mobile)
+    document.querySelectorAll(".menu a").forEach(link => {
+        link.addEventListener("click", function () {
+            menu.classList.remove("active");
+        });
+    });
 });
