@@ -6,6 +6,7 @@
     <title>Kutuhala - Quiz Club</title>
     <link rel="stylesheet" href="kuthuhala.css">
     <script defer src="kuthuhala.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -14,16 +15,13 @@
         <p>Where Curiosity Meets Knowledge!</p>
         
         <nav>
-            <ul class="menu">
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="menu" id="menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#eligibility">Eligibility Criteria</a></li>
-                <li class="dropdown">
-                    <a href="#events">Events Hosted ▼</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#past-events">Past Events</a></li>
-                        <li><a href="#upcoming-events">Upcoming Events</a></li>
-                    </ul>
-                </li>
+                <li><a href="#events">Events Hosted</a></li>
                 <li><a href="#contact">Student Heads & Contact</a></li>
             </ul>
         </nav>
@@ -35,7 +33,7 @@
     </section>
 
     <section id="eligibility">
-        <h2 id="h21">Eligibility Criteria</h2>
+        <h2>Eligibility Criteria</h2>
         <ul>
             <li>✅ Open to all students.</li>
             <li>✅ No prior experience required.</li>
@@ -62,7 +60,12 @@
         <p>Vice President: yyy- <a href="mailto:john@example.com">Email</a></p>
         <p>Follow us on <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
     </section>
-    
 
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
