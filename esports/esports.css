@@ -1,0 +1,215 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #8f2727;
+
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #321213;
+    color: #c50f0f;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color:white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("background.webp"); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    min-height: 50vh; 
+}
+
+.hero-content {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#hero button {
+    background-color: #23060b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sections */
+.section {
+    padding: 40px 0;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.event-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+.event img{
+    max-width: 100%;
+}
+
+/* Contact Section */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #450202;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #321212;
+    color: #f01c1c;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #641313;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        color: #d1aaaa;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #ddb8b8;
+        margin: 5px 0;
+    }
+}
+
+/* Hero Section */
+#hero {
+    background-image: linear-gradient(rgba(114, 28, 28, 0.5), rgba(0, 0, 0, 0.5)), url("gaming-background.jpg"); /* Replace with your background image */
+    /* ... (rest of hero styles) ... */
+}
+
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjust minmax as needed */
+    grid-gap: 20px;
+}
+
+.event {
+    background-color: #370a0a; /* Darker event card background */
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s; /* Add a hover effect */
+}
+
+.event img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.event h3 {
+    color: #eee;
+    margin-bottom: 5px;
+}
+
+.event p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.event:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+:root {
+    --primary-color: #00aeff; 
+}
+
+a {
+    color: var(--primary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+}
