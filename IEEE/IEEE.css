@@ -25,7 +25,7 @@ body{
     
 
 .back-button {
-  background-color: #9f3737; /* Green background */
+  background-color: #060606; /* Green background */
   color: white; /* White text */
   padding: 10px 20px; /* Padding for the button */
   border: none; /* No border */
@@ -116,6 +116,7 @@ hr {
 .ieee-logo{
  height: 100px;
  width: 100px;
+ border-radius: 100%;
  }
 
  .program-grid {
@@ -167,4 +168,90 @@ hr {
   margin: 10px 0; /* Adds spacing between list items */
 }
 
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
 
+.social-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #e0f7fa;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+/* css sytling 1*/
+/* .image-container { 
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-container .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+*/
+/* css styling 2*/
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap; /* Prevents images from wrapping */
+
+}
+
+.slides {
+  display: flex;
+  width: 200%;
+  animation: slide 10s linear infinite;
+}
+
+.slides img {
+  width: 20%;
+  border-radius: 10px;
+  height:200px;
+  flex-shrink: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth zoom & fade effect */
+
+
+}
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+
+  100% { transform: translateX(-50%); }
+
+
+}
+/* Zoom + Fade-in Effect on Hover */
+.slides img:hover {
+  transform: scale(1.1); /* Slight zoom */
+  opacity: 0.8; /* Slight fade effect */
+}
