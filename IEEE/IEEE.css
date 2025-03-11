@@ -229,24 +229,28 @@ hr {
 
 .slides {
   display: flex;
-  width: 200%;
-  animation: slide 10s linear infinite;
+  width: 360%;
+  animation: slide 20s linear infinite;
 }
 
 .slides img {
-  width: 20%;
+  width: 5%;
   border-radius: 10px;
-  height:200px;
+  height:5%;
   flex-shrink: 0;
   transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth zoom & fade effect */
 
 
 }
+.slider:hover .slides {
+  animation-play-state: paused;
+}
+
 
 @keyframes slide {
   0% { transform: translateX(0%); }
 
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-100%); }
 
 
 }
