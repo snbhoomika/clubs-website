@@ -1,19 +1,30 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.querySelector(".hamburger");
-    const menu = document.querySelector(".menu");
+// JavaScript for Kutuhala Club Website
 
-    hamburger.addEventListener("click", function () {
-        menu.classList.toggle("active");
-        hamburger.innerHTML = menu.classList.contains("active")
-            ? '<i class="fas fa-times"></i>'
-            : '<i class="fas fa-bars"></i>';
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+  
+    hamburger.addEventListener('click', function () {
+      navMenu.classList.toggle('active');
+      hamburger.classList.toggle('toggle');
     });
-
-    // Close menu when a link is clicked (for better UX on mobile)
-    document.querySelectorAll(".menu a").forEach(link => {
-        link.addEventListener("click", function () {
-            menu.classList.remove("active");
-            hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+  
+    // Close the menu when a link is clicked
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function () {
+        navMenu.classList.remove('active');
+        hamburger.classList.remove('toggle');
+      });
+    });
+  
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
         });
+      });
     });
-});
+  });
+  
