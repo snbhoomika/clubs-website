@@ -29,23 +29,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
   
   // Image Hover Effect
-  const images = document.querySelectorAll('.image-container img');
-  let currentIndex = 0;
+  // const images = document.querySelectorAll('.image-container img');
+  // let currentIndex = 0;
   
-  function showImage(index) {
-    images.forEach((image, i) => {
-        image.style.opacity = i === index ? 1 : 0;
-    });
-  }
+  // function showImage(index) {
+  //   images.forEach((image, i) => {
+  //       image.style.opacity = i === index ? 1 : 0;
+  //   });
+  // }
   
-  images.forEach((image, index) => {
-    image.addEventListener('mouseover', () => {
-        currentIndex = index;
-        showImage(currentIndex);
-    });
-  });
+  // images.forEach((image, index) => {
+  //   image.addEventListener('mouseover', () => {
+  //       currentIndex = index;
+  //       showImage(currentIndex);
+  //   });
+  // });
   
-  showImage(currentIndex);
+  // showImage(currentIndex);
+
+
+
   
   // Burger Menu Toggle
   const burger = document.querySelector('.hamburger-icon');  // Assuming your burger icon has this class
@@ -55,3 +58,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     navLinks.classList.toggle('active');
   });
   
+
+
+
+ 

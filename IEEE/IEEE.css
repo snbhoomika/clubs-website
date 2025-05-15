@@ -49,21 +49,21 @@ body{
 
 
 /* Hamburger Menu Styles */
-.menu {
+/* .menu {
     position: fixed;
     top: 10px;
     right: 20px;
     z-index: 1000;
     text-align: right;
-  }
+  } */
   
-  .hamburger-icon {
-    font-size: 30px;
-    cursor: pointer;
-    color: #7c7979;
-  }
+  /* .hamburger-icon { */
+    /* font-size: 30px; */
+    /* cursor: pointer; */
+    /* color: #7c7979; */
+  /* } */
   
-  .menu-items {
+  /* .menu-items {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -76,8 +76,8 @@ body{
      z-index: 1100; 
     
   }
-  
-  .menu.active .menu-items {
+   */
+  /* .menu.active .menu-items {
     display: flex;
   }
   
@@ -92,7 +92,7 @@ body{
     background-color: #818282;
     color: #ffffff;
     border-radius: 3px;
-  }
+  } */
     
 .description{
     background-color:rgba(10, 10, 10, 0.5);
