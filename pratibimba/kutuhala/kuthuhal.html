@@ -1,64 +1,129 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kutuhala - Quiz Club</title>
-    <link rel="stylesheet" href="kuthuhala.css">
-    <script defer src="kuthuhala.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kutuhala Club</title>
+  <link rel="stylesheet" href="kuthuhala.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <img src="kutuhala.png" alt="Kutuhala Logo" id="club-logo">
-        <h1>Welcome to Kutuhala</h1>
-        <p>Where Curiosity Meets Knowledge!</p>
+  <!-- Header Section with Fixed Position -->
+  <header>
+    <div class="logo-container">
+      <img src="kutuhala.png" alt="Club Logo" />
+      <h1>Kutuhala</h1>
+    </div>
+    <nav>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#eligibility">Eligibility</a></li>
+        <li><a href="#upcoming">Upcoming</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <nav>
-            <div class="hamburger" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="menu" id="menu">
-                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
-                <li><a href="#eligibility"><i class="fas fa-user-check"></i> Eligibility</a></li>
-                <li><a href="#events"><i class="fas fa-calendar-alt"></i> Events</a></li>
-                <li><a href="#contact"><i class="fas fa-address-book"></i> Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Welcome to the Quiz Club</h1>
+      <p>Dominate the Game. Join the Community.</p>
+    </div>
+  </section>
 
-    <section id="about">
-        <h2>About Kutuhala</h2>
-        <p>Kutuhala is an exciting quiz club that fosters curiosity through engaging events, puzzles, and competitions.</p>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Kutuhala, the Quizzing club of UVCE, aims to nurture an inquisitive community on campus, promoting scientific thinking and fueling curiosity for a brighter tomorrow using fun quizzes.</p>
+    </div>
+  </section>
 
-    <section id="eligibility">
-        <h2>Eligibility Criteria</h2>
-        <ul>
-            <li>✅ Open to all students.</li>
-            <li>✅ No prior experience required.</li>
-            <li>✅ Just bring your curiosity and enthusiasm!</li>
-        </ul>
-    </section>
-
-    <section id="events">
-        <h2>Events Hosted</h2>
-        <div id="past-events">
-            <h3>Past Events</h3>
-            <img src="event1.jpg" alt="Brain Busters Quiz">
-            <img src="event2.jpg" alt="Puzzle Mania">
+  <!-- Events Section -->
+  <section id="events" class="section">
+    <div class="container">
+      <h2>Events Conducted</h2>
+      <div class="event-grid">
+        <div class="event"><img src="event1.jpg" alt="Event 1" /><h3>Quiz Quiz Hota Hai</h3></div>
+        <div class="event"><img src="event2.jpg" alt="Event 2" /><h3>Quiz Premier League</h3></div>
+        <div class="event"><img src="event3.jpg" alt="Event 3" /><h3>Yakshaprashne (2023 & 2024)</h3></div>
+        <div class="event">
+            <img src="event4.jpg" alt="Event 4" />
+            <h3>4. Quizzy Bee Challenge</h3>
         </div>
-        <div id="upcoming-events">
-            <h3>Upcoming Events</h3>
-            <p>Stay tuned for our next big quiz competition!</p>
+        <div class="event">
+            <img src="event5.jpg" alt="Event 5" />
+            <h3>5. Inquizitive</h3>
         </div>
-    </section>
+        <div class="event">
+            <img src="event6.jpg" alt="Event 6" />
+            <h3>6. Quiz India Movement (2022)</h3>
+        </div>
+        <div class="event">
+            <img src="event7.jpg" alt="Event 7" />
+            <h3>7. A Venture for Treasure (2022)</h3>
+        </div>
+        <div class="event">
+            <img src="event8.jpg" alt="Event 8" />
+            <h3>8. Quizzicable Me</h3>
+        </div>
+        <div class="event">
+            <img src="event9.jpg" alt="Event 9" />
+            <h3>9. Does Your Grey Matter? (2022)</h3>
+        </div>
+        <div class="event">
+            <img src="event10.jpg" alt="Event 10" />
+            <h3>10. Puranika (2024)</h3>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Student Heads & Contact</h2>
-        <p>President: xxx - <a href="mailto:jane@example.com">Email</a></p>
-        <p>Vice President: yyy - <a href="mailto:john@example.com">Email</a></p>
-        <p>Follow us on <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
-    </section>
+  <!-- Eligibility Section with Card Style -->
+  <section id="eligibility" class="section">
+    <div class="container card">
+      <h2>Eligibility Criteria</h2>
+      <ul>
+        <li>Anyone in UVCE having a passion for quizzing.</li>
+        <li>Adhere to the club's code of conduct.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Upcoming Events Section -->
+  <section id="upcoming" class="section">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <div class="event-grid">
+        <div class="event">
+          <h3>A Collab Event with Vinimaya</h3>
+          <p>Date: [Date]<br>Time: [Time]<br>Registration: [Link]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>MS Gayathri (President): 8317494420</p>
+      <p>Sudeep Hegde (Vice-President)</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-discord"></i></a>
+        <a href="#"><i class="fab fa-twitch"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/uvcekutuhala"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <script src="kuthuhala.js"></script>
 </body>
 </html>

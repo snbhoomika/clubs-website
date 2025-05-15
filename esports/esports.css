@@ -117,12 +117,7 @@ nav a:hover {
 }
 
 /* Footer */
-footer {
-    background-color: #321212;
-    color: #f01c1c;
-    text-align: center;
-    padding: 1rem 0;
-}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -203,7 +198,7 @@ footer {
 
 
 :root {
-    --primary-color: #00aeff; 
+    --primary-color: #25ba77; 
 }
 
 a {

@@ -244,25 +244,40 @@ header {
 }
 
 /* Contacts Section */
-.contacts {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
 
-.contacts a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #e0f7fa;
-}
-.social-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-}
-.hi {
+.section {
+    padding: 40px 0;
+  }
+  
+  .section h2 {
+    margin-bottom: 20px;
     text-align: center;
-}
+  }
+  
+  .event-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  .event img{
+    max-width: 100%;
+  }
+  
+  /* Contact Section */
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 /* Smooth fade-in effect for the hero section */
 .hero.fade-in {
     opacity: 0;
